@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-GanZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./asset/css/contact.css">
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/help.css">
+    <script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
+    <script>
+        function showAlert() {
+            alert('Cảm ơn bạn đã gửi thông tin, chúng tôi sẽ liên lạc với bạn sớm nhất trong vòng 24h kế tiếp.')
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <h1 class="title1">Xin chào. GanZ có thể giúp gì cho bạn?</h1>
+
+            <div class="dropdown">
+                <a href="help.html"><input type="text" id="myInput" onclick="" onkeyup="filterFunction()"
+                        placeholder="Search for names.."></a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-content">
+        <h1 class="contact-header">Đội chăm sóc khách hàng GanZ</h1>
+        <p>Chúng tôi muốn lắng nghe câu hỏi và ý kiến đóng góp từ bạn. Hãy phản hồi cho GanZ biết vấn đề của bạn
+            nhé! Chúng tôi sẽ liên hệ lại bạn trong 24h tiếp theo.</p>
+    </div>
+
+    <div class="contact-fill-info">
+        <div class="fill-info">
+            <form>
+                <p><span class="change-color">*</span> Bạn cần hỗ trợ với vai trò là người bán hay người mua?</p>
+                <select name="user" id="user" onchange="onChangeOption()">
+                    <option value="seller">Người bán</option>
+                    <option value="customer">Người mua</option>
+                </select>
+
+                <p><span class="change-color">*</span> Bạn thắc mắc về vấn đề nào?</p>
+                <select name="topic" id="topic" onchange="onChangeOption()">
+                    <option value="Về việc giao hàng của GanZ">Về việc giao hàng của GanZ</option>
+                    <option value="Trải nghiệm mua hàng trực tiếp">Trải nghiệm mua hàng trực tiếp</option>
+                    <option value="Đổi/trả hàng với GanZ">Đổi/trả hàng với GanZ</option>
+                    <option value="Các vấn đề liên quan đến đơn hàng">Các vấn đề liên quan đến đơn hàng</option>
+                </select>
+
+                <p><span class="change-color">*</span> Địa chỉ email của bạn</p>
+                <input class="contact-email-input1" id="support-email" name="support-email" type="email"
+                    placeholder="Điền địa chỉ email của bạn">
+
+                <p><span class="change-color">*</span> Nội dung phản hồi</p>
+                <input class="contact-input2" id="support-content" name="support-content" type="text"
+                    placeholder="Điền thêm thông tin chi tiết về thắc mắc/vấn đề của bạn">
+
+                <p>Bạn có thể đính kèm tệp với đuôi là jpg/jpeg/png/pdf/mp4. Dung lượng tệp không quá 4.5MB.
+                </p>
+
+                <input type="file" id="file-uploader">
+
+                <!-- <div class="g-recaptcha" data-sitekey="6LdJTmIcAAAAABeuSed9F-3alUyIIxCsFnVqCPmR"></div> -->
+
+                <button type="submit" id="send-request">Gửi phản hồi</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="about-footer">
+        <p>© 2021 GanZ. Tất cả các quyền được bảo lưu.</p>
+        <div class="contact-footer">
+            <div class="social-contact">
+                <div class="fb">
+                    <i class="fab fa-facebook"></i>
+                </div>
+
+                <div class="twitter">
+                    <i class="fab fa-twitter-square"></i></i>
+                </div>
+
+            </div>
+
+            <div class="info-footer">
+                <p>Điều khoản Shopee </p>
+                <p>Điều khoản dịch vụ</p>
+                <p>Chính sách riêng tư</p>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+
+</body>
+<script src="./js/support.js"></script>
+    <script type="text/javascript">
+        function onChangeOption() {
+            var select = document.getElementById('topic');
+            var option = select.options[select.selectedIndex];
+
+            var selectUser = document.getElementById('user')
+            var optionUser = selectUser.options[selectUser.selectedIndex];
+            //Lấy msp từ Value của Option
+            document.getElementById('topic').value = option.value;
+            document.getElementById('user').value = optionUser.value;
+            //Lấy unit từ Attribute unit của Option
+            // document.getElementById('customer').value = option.value;
+            
+        }
+    </script>
+</html>

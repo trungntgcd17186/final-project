@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/navbar.css">
+    <link rel="stylesheet" href="./asset/css/resposive.css">
+    <link rel="stylesheet" href="./asset/css/notification.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <ul class="header__navbar-list hide-tab-mobile">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng E-commerce</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-poiter">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="mobile-menu" class="header__navbar-list header__navbar-list-mobile">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+    
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo khoát tay dài màu trắng tuyệt đẹp cho nam giới.</span>
+                                                <span class="header__notify-discription">Sản phẩm được làm bằng chất liệu thoáng mát</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/underwear2.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</span>
+                                                <span class="header__notify-discription">Quần mang thoải mái không bị bí</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt3.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo lông mùa đông cho nam giới</span>
+                                                <span class="header__notify-discription">Sản phẩm cực kì ấm cúm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="./notification.html" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./about.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-spa"></i>
+                                About
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user header__navbar-item--separate">
+                            <a href="./login.html" class="header__navbar-item-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user">
+                            <a href="./register.html" class="header__navbar-item-link">
+                                Đăng kí
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">
+                                Khanh nguyen
+                            </span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <button id="logout" onClick="handleLogout()">Đăng xuất</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="icon-cancel" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </ul>
+                </div>
+    
+                <!-- search -->
+                <div class="header-with-search">
+                    <a href="./index.html"class="header__logo">
+                        <i class="header__logo-icon fas fa-cannabis"></i>
+                        <span class="header-search__logo-name">GanZ</span>
+                    </a>
+                    <div class="header__search-container">
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." class="header__search-input">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Khoát Nam</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Sơ Mi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="header__search-item">
+                            <div class="search-item-list">
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">sale</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">
+                                            GanZ Outlet ưu đãi giảm 50%
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">bộ sưu tập</span>
+                                    <i class="header__item-icon fas fa-chevron-down"></i>
+                                </a>
+                                
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">áo</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Áo sơ mi</a>
+                                        <a href="#" class="dropdown-item">Áo Polo</a>
+                                        <a href="#" class="dropdown-item">Áo thể thao</a>
+                                        <a href="#" class="dropdown-item">Áo thun</a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">quần short</span>
+                                </a>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">quần lót</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">quần lót Trunk</a>
+                                        <a href="#" class="dropdown-item">quần lót Brief</a>
+                                        <a href="#" class="dropdown-item">quần lót Boxer Brief</a>
+                                    </div>
+                                </div>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">phụ kiện</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">tất</a>
+                                        <a href="#" class="dropdown-item">khẩu trang</a>
+                                        <a href="#" class="dropdown-item">phụ kiện khác</a>
+                                    </div>
+                                </div>
+                                <a href="./about.html" class="item-list header__item">
+                                    <span class="header__item-name">ganZblog</span>
+                                </a>
+                                <a href="./huongdan.html" class="item-list header__item">
+                                    <span class="header__item-name">chọn size</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__card">
+                        <i class="search-icon-mobile fas fa-search" onclick="inputSearch()"></i>
+                        <i class="menu-icon-mobile fas fa-bars" onclick="mobileMenu()"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__card-icon fas fa-shopping-bag"></i>
+                            <span class="header__cart-notice">0</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <div class="header__cart-header">
+                                    <img src="./asset/img/no-cart.png" alt="no-cart" class="header__cart-no-cart-img">
+                                    <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm trong giỏ hàng</p>
+                                </div>
+      
+                                <ul class="header__cart-list-item"></ul> 
+      
+                                <div class="header__cart-footer">
+                                    <p>Tổng tiền: <span>0 đ</span></p>
+                                    <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <div class="container-notification">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2 grid__col-2-mobile">
+                        <div class="my-profile">
+                            <img src="./asset/img/anh1.jpeg" alt="" class="my-profile__image">
+                            <div class="my-profile__info">
+                                <h2 class="my-profile__info-name">Quốc Khánh</h2>
+                                <a href="" class="my-profile__info-fix">
+                                    <i class="fas fa-pen"></i>
+                                    Sửa hồ sơ
+                                </a>
+                            </div>
+                            <div class="menu-mobile-noti" onclick="toggleMemu()">
+                                <i class="fas fa-bars" onclick=""></i>
+                            </div>
+                        </div>
+                        <ul class="notification-menu__list">
+                            <li class="notification-menu__item">
+                                <button onclick="showPanel(0, '')" class="notification-menu__item-link">
+                                    <i class="far fa-bell"></i>
+                                    <span>Thông báo</span>
+                                </button>
+                            </li>
+                            <li class="notification-menu__item">
+                                <button onclick="showPanel(1, '')"  class="notification-menu__item-link">
+                                    <i class="fas fa-receipt"></i>
+                                    <span>Đơn Mua</span>
+                                </button>
+                            </li>
+                            <li class="notification-menu__item">
+                                <button onclick="showPanel(2, '')" class="notification-menu__item-link">
+                                    <i class="far fa-user"></i>
+                                    <span>Tài Khoản Của Tôi</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-10 gird__notification">
+                        <div class="notification__box">
+                            <div class="see-all">
+                                <h3 class="see-all-name">Đánh dấu tất cả đã đọc</h3>
+                            </div>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Deal rẻ ngập tràn chỉ 9K</h3>
+                                    <p class="notification__sale-ds">✨ Hàng hiệu giá sốc giảm đến 50% 💥 Freeship toàn sàn từ 99K😍 Ưu đãi này chỉ riêng bạn có🔥 Mở Ganz - Chốt đơn liền liền!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale2.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Voucher 300K nóng hổi lên sàn!!!</h3>
+                                    <p class="notification__sale-ds">⏰ 22H khởi động tung Voucher Hot 😍 Giá trị tăng dần mỗi 30 phút 💥 Hiệu lực 0H - 2H ngày 15.08 🔥 Sale Giữa Tháng ùa về - Săn ngay!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Deal rẻ ngập tràn chỉ 9K</h3>
+                                    <p class="notification__sale-ds">✨ Hàng hiệu giá sốc giảm đến 50% 💥 Freeship toàn sàn từ 99K😍 Ưu đãi này chỉ riêng bạn có🔥 Mở Ganz - Chốt đơn liền liền!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale2.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Voucher 300K nóng hổi lên sàn!!!</h3>
+                                    <p class="notification__sale-ds">⏰ 22H khởi động tung Voucher Hot 😍 Giá trị tăng dần mỗi 30 phút 💥 Hiệu lực 0H - 2H ngày 15.08 🔥 Sale Giữa Tháng ùa về - Săn ngay!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Deal rẻ ngập tràn chỉ 9K</h3>
+                                    <p class="notification__sale-ds">✨ Hàng hiệu giá sốc giảm đến 50% 💥 Freeship toàn sàn từ 99K😍 Ưu đãi này chỉ riêng bạn có🔥 Mở Ganz - Chốt đơn liền liền!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale2.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Voucher 300K nóng hổi lên sàn!!!</h3>
+                                    <p class="notification__sale-ds">⏰ 22H khởi động tung Voucher Hot 😍 Giá trị tăng dần mỗi 30 phút 💥 Hiệu lực 0H - 2H ngày 15.08 🔥 Sale Giữa Tháng ùa về - Săn ngay!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Deal rẻ ngập tràn chỉ 9K</h3>
+                                    <p class="notification__sale-ds">✨ Hàng hiệu giá sốc giảm đến 50% 💥 Freeship toàn sàn từ 99K😍 Ưu đãi này chỉ riêng bạn có🔥 Mở Ganz - Chốt đơn liền liền!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale2.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Voucher 300K nóng hổi lên sàn!!!</h3>
+                                    <p class="notification__sale-ds">⏰ 22H khởi động tung Voucher Hot 😍 Giá trị tăng dần mỗi 30 phút 💥 Hiệu lực 0H - 2H ngày 15.08 🔥 Sale Giữa Tháng ùa về - Săn ngay!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                            <a href="" class="notification__sale">
+                                <div class="notification__sale-image">
+                                    <img src="./asset/img/sale.png" alt="" class="notification__sale-img">
+                                </div>
+                                <div class="notification__sale-des">
+                                    <h3 class="notification__sale-title">Deal rẻ ngập tràn chỉ 9K</h3>
+                                    <p class="notification__sale-ds">✨ Hàng hiệu giá sốc giảm đến 50% 💥 Freeship toàn sàn từ 99K😍 Ưu đãi này chỉ riêng bạn có🔥 Mở Ganz - Chốt đơn liền liền!</p>
+                                    <p class="notification__sale-date">7:30 15-08-2021</p>
+                                </div>
+                                <button class="notification__sale-btn">Xem chi tiết</button>
+                            </a>
+                        </div>
+                        <div class="notification__box notification__box-history">
+                            <div class="order-history">
+                                <div class="order-history-search">
+                                    <i class="order-search-icon fas fa-search"></i>
+                                    <input type="text" placeholder="Tìm kiếm đơn hàng, theo tên..." class="search__text">
+                                </div>
+                                <!-- <div class="order-history__container">
+                                    <div class="order-history-status">
+                                        <span class="order-history-like">Yêu thích</span>
+                                        <div class="order-history-status__deliver">
+                                            <i class="deliver-icon fas fa-truck"></i> 
+                                            <span class="order-history-delivery_detail">Giao hàng thành công</span>
+                                            <i class="help-icon far fa-question-circle"></i>
+                                            <span class="order-history-delivery_success">ĐÃ GIAO</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="notification__sale notification__order">
+                                        <div class="notification__sale-image">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="notification__sale-img">
+                                        </div>
+                                        <div class="notification__sale-des">
+                                            <h3 class="notification__sale-title">✨ 💥 Áo sơ mi tay dài tuyệt đẹp cho nam giới 💥 ✨</h3>
+                                            <p class="notification__sale-ds">Phân loại hàng: Xám khói</p>
+                                            <p class="notification__sale-date">x1</p>
+                                        </div>
+                                        <div class="notification__price">
+                                            <span class="notification__price-current">199.000đ</span>
+                                            <span class="notification__price-sale">299.000đ</span>
+                                        </div>
+                                    </a>
+                                    <div class="notification-evaluate">
+                                        <span class="notification-evaluate-date">Đánh giá sản phẩm ngay</span>
+                                        <div class="notification-evaluate-form">
+                                            <h2 class="notification-evaluate-totalprice">
+                                                <i class="fab fa-staylinked"></i>
+                                                Tổng Số Tiền:
+                                                <span class="price-of-order">199.000đ</span>
+                                            </h2>
+                                            <button class="evaluate-btn btn-modal btn-active">Đánh Giá</button>
+                                            <button class="evaluate-btn">Mua Lần Nữa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-history__container">
+                                    <div class="order-history-status">
+                                        <span class="order-history-like">Yêu thích</span>
+                                        <div class="order-history-status__deliver">
+                                            <i class="deliver-icon fas fa-truck"></i> 
+                                            <span class="order-history-delivery_detail">Giao hàng thành công</span>
+                                            <i class="help-icon far fa-question-circle"></i>
+                                            <span class="order-history-delivery_success">ĐÃ HUỶ</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="notification__sale notification__order">
+                                        <div class="notification__sale-image">
+                                            <img src="./asset/img/underwear2.jpeg" alt="" class="notification__sale-img">
+                                        </div>
+                                        <div class="notification__sale-des">
+                                            <h3 class="notification__sale-title">✨ 💥 Quần lót được làm bằng chất liệu cotton thoán mát cho nam 💥 ✨</h3>
+                                            <p class="notification__sale-ds">Phân loại hàng: Hồng cánh xen</p>
+                                            <p class="notification__sale-date">x2</p>
+                                        </div>
+                                        <div class="notification__price">
+                                            <span class="notification__price-current">99.000đ</span>
+                                            <span class="notification__price-sale">199.000đ</span>
+                                        </div>
+                                    </a>
+                                    <div class="notification-evaluate">
+                                        <span class="notification-evaluate-date">Đánh giá sản phẩm ngay</span>
+                                        <div class="notification-evaluate-form">
+                                            <h2 class="notification-evaluate-totalprice">
+                                                <i class="fab fa-staylinked"></i>
+                                                Tổng Số Tiền:
+                                                <span class="price-of-order">198.000đ</span>
+                                            </h2>
+                                            <button class="evaluate-btn btn-modal btn-active">Đánh Giá</button>
+                                            <button class="evaluate-btn">Mua Lần Nữa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-history__container">
+                                    <div class="order-history-status">
+                                        <span class="order-history-like">Yêu thích</span>
+                                        <div class="order-history-status__deliver">
+                                            <i class="deliver-icon fas fa-truck"></i> 
+                                            <span class="order-history-delivery_detail">Giao hàng thành công</span>
+                                            <i class="help-icon far fa-question-circle"></i>
+                                            <span class="order-history-delivery_success">ĐÃ GIAO</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="notification__sale notification__order">
+                                        <div class="notification__sale-image">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="notification__sale-img">
+                                        </div>
+                                        <div class="notification__sale-des">
+                                            <h3 class="notification__sale-title">✨ 💥 Áo sơ mi tay dài tuyệt đẹp cho nam giới 💥 ✨</h3>
+                                            <p class="notification__sale-ds">Phân loại hàng: Xám khói</p>
+                                            <p class="notification__sale-date">x1</p>
+                                        </div>
+                                        <div class="notification__price">
+                                            <span class="notification__price-current">199.000đ</span>
+                                            <span class="notification__price-sale">299.000đ</span>
+                                        </div>
+                                    </a>
+                                    <div class="notification-evaluate">
+                                        <span class="notification-evaluate-date">Đánh giá sản phẩm ngay</span>
+                                        <div class="notification-evaluate-form">
+                                            <h2 class="notification-evaluate-totalprice">
+                                                <i class="fab fa-staylinked"></i>
+                                                Tổng Số Tiền:
+                                                <span class="price-of-order">199.000đ</span>
+                                            </h2>
+                                            <button class="evaluate-btn btn-modal btn-active">Đánh Giá</button>
+                                            <button class="evaluate-btn">Mua Lần Nữa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-history__container">
+                                    <div class="order-history-status">
+                                        <span class="order-history-like">Yêu thích</span>
+                                        <div class="order-history-status__deliver">
+                                            <i class="deliver-icon fas fa-truck"></i> 
+                                            <span class="order-history-delivery_detail">Giao hàng thành công</span>
+                                            <i class="help-icon far fa-question-circle"></i>
+                                            <span class="order-history-delivery_success">ĐÃ GIAO</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="notification__sale notification__order">
+                                        <div class="notification__sale-image">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="notification__sale-img">
+                                        </div>
+                                        <div class="notification__sale-des">
+                                            <h3 class="notification__sale-title">✨ 💥 Áo sơ mi tay dài tuyệt đẹp cho nam giới 💥 ✨</h3>
+                                            <p class="notification__sale-ds">Phân loại hàng: Xám khói</p>
+                                            <p class="notification__sale-date">x1</p>
+                                        </div>
+                                        <div class="notification__price">
+                                            <span class="notification__price-current">199.000đ</span>
+                                            <span class="notification__price-sale">299.000đ</span>
+                                        </div>
+                                    </a>
+                                    <div class="notification-evaluate">
+                                        <span class="notification-evaluate-date">Đánh giá sản phẩm ngay</span>
+                                        <div class="notification-evaluate-form">
+                                            <h2 class="notification-evaluate-totalprice">
+                                                <i class="fab fa-staylinked"></i>
+                                                Tổng Số Tiền:
+                                                <span class="price-of-order">199.000đ</span>
+                                            </h2>
+                                            <button class="evaluate-btn btn-modal btn-active">Đánh Giá</button>
+                                            <button class="evaluate-btn">Mua Lần Nữa</button>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="notification__box">
+                            <div class="manage__profile">
+                                <div class="profile__name">
+                                    <h2 class="profile__title">Hồ Sơ Của Tôi</h2>
+                                    <p class="profile__description">Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                                </div>
+                                <div class="manage__profile-detail">
+                                    <ul class="manage__profile-form">
+                                        <li class="manage__profile-form-item">
+                                            <span class="manage__profile-name">Tên Đăng Nhập</span>
+                                            <span class="manage__profile-namefill">quockhanh123</span>
+                                        </li>
+                                        <li class="manage__profile-form-item">
+                                            <span class="manage__profile-name">Tên</span>
+                                            <input type="text" class="form__name">
+                                        </li>
+                                        <li class="manage__profile-form-item">
+                                            <span class="manage__profile-name">Email</span>
+                                            <input type="text" class="form__email">
+                                        </li>
+                                        <li class="manage__profile-form-item">
+                                            <span class="manage__profile-name">Số Điện Thoại</span>
+                                            <input type="text" class="form__phone">
+                                        </li>
+                                        <li class="manage__profile-form-item">
+                                            <span class="manage__profile-name">Giới Tính</span>
+                                            <input type="radio" name="sex" class="form__sex">
+                                            <label for="sex" class="sex__name" >Nam</label>
+                                            <input type="radio" name="sex" class="form__sex">
+                                            <label for="sex" class="sex__name">Nữ</label>
+                                            <input type="radio" name="sex" class="form__sex">
+                                            <label for="sex" class="sex__name">Khác</label>
+                                        </li>
+                                        <li class="manage__profile-form-item">
+                                            <span class="manage__profile-name">Ngày Sinh</span>
+
+                                            <div class="form-select-year">
+                                                <select name="bth" id="">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                    <option value="">6</option>
+                                                    <option value="">7</option>
+                                                </select>
+                                                <select name="month" id="">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                    <option value="">6</option>
+                                                    <option value="">7</option>
+                                                    <option value="">8</option>
+                                                    <option value="">9</option>
+                                                    <option value="">10</option>
+                                                    <option value="">11</option>
+                                                    <option value="">12</option>
+                                                </select>
+                                                <select name="years" id="">
+                                                    <option value="">2002</option>
+                                                    <option value="">2003</option>
+                                                    <option value="">2004</option>
+                                                    <option value="">2005</option>
+                                                    <option value="">2006</option>
+                                                    <option value="">2007</option>
+                                                    <option value="">2008</option>
+                                                    <option value="">2009</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="manage__profile-avatar">
+                                        <div class="avatar__image"></div>
+                                        <div class="avatar__image-file">
+                                            <input type="file" class="image-btn">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="profile-btn">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__content">
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">About Us</h2>
+                        <p class="content__box-description">HUB Hà Nội: <span>Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội</span>
+
+                            HUB Tp HCM: <span>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh <a href="#">Read More</a></p></span>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Contact</h2>
+                        <p class="content__box-description">
+                            <span>416 Water St.</span>
+                            <span>New York, NY, 10002, U.S.A </span>
+                            <span>Phone:+1.123.456.78910 </span>
+                            <span>Website: <a href="#">https://www.ganz.com</a> </span>
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Need Help?</h2>
+                        <p class="content__box-description">
+                            <span>Liên hệ</span>    
+                            <span>Hỏi đáp </span>    
+                            <span>Thông tin tài khoản</span>    
+                            <span>Đơn hàng của bạn</span>    
+                            <span>Tủ đồ định kỳ của bạn</span>    
+                             <a href="#">Read More</a></p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Get in touch</h2>
+                        <div class="input-box">
+                            <input type="text" class="input-text" placeholder="Enter your Email">
+                             <a href="#" class="box-icon-link">
+                                <i class="icon-link fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="social-box">
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__certification">
+                    <div class="content__certification-title">
+                        <h2 class="content__certification-text">@ CÔNG TY TNHH GANZ ASIA</h2>
+                        <p class="content__certification-des">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.</p>
+                    </div>
+                    <div class="content__certification-logo">
+                        <img src="./asset/img/logoSaleNoti.png" alt="" class="content__certification-img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="notification-message success"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/notification.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/auth/logout.js"></script>
+    <script src="./js/auth/checkLogin.js"></script>
+    <!-- <script src="./js/detailProduct.js"></script> -->
+</body>
+</html>

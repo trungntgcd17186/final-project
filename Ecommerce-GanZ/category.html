@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/category.css">
+    <link rel="stylesheet" href="./asset/css/navbar.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/resposive.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>Danh mục sản phẩm - GanZ</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <ul class="header__navbar-list hide-tab-mobile">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng E-commerce</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-poiter">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="mobile-menu" class="header__navbar-list header__navbar-list-mobile">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+    
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo khoát tay dài màu trắng tuyệt đẹp cho nam giới.</span>
+                                                <span class="header__notify-discription">Sản phẩm được làm bằng chất liệu thoáng mát</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/underwear2.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</span>
+                                                <span class="header__notify-discription">Quần mang thoải mái không bị bí</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt3.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo lông mùa đông cho nam giới</span>
+                                                <span class="header__notify-discription">Sản phẩm cực kì ấm cúm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="./notification.html" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./about.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-spa"></i>
+                                About
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user header__navbar-item--separate">
+                            <a href="./login.html" class="header__navbar-item-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user">
+                            <a href="./register.html" class="header__navbar-item-link">
+                                Đăng kí
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">
+                                Thanh Trung
+                            </span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <button id="logout" onClick="handleLogout()">Đăng xuất</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="icon-cancel" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </ul>
+                </div>
+    
+                <!-- search -->
+                <div class="header-with-search">
+                    <a href="./index.html"class="header__logo">
+                        <i class="header__logo-icon fas fa-cannabis"></i>
+                        <span class="header-search__logo-name">GanZ</span>
+                    </a>
+                    <div class="header__search-container">
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." class="header__search-input">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Khoát Nam</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Sơ Mi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="header__search-item">
+                            <div class="search-item-list">
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">sale</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">
+                                            GanZ Outlet ưu đãi giảm 50%
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">bộ sưu tập</span>
+                                    <i class="header__item-icon fas fa-chevron-down"></i>
+                                </a>
+                                
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">áo</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Áo sơ mi</a>
+                                        <a href="#" class="dropdown-item">Áo Polo</a>
+                                        <a href="#" class="dropdown-item">Áo thể thao</a>
+                                        <a href="#" class="dropdown-item">Áo thun</a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">quần short</span>
+                                </a>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">quần lót</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">quần lót Trunk</a>
+                                        <a href="#" class="dropdown-item">quần lót Brief</a>
+                                        <a href="#" class="dropdown-item">quần lót Boxer Brief</a>
+                                    </div>
+                                </div>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">phụ kiện</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">tất</a>
+                                        <a href="#" class="dropdown-item">khẩu trang</a>
+                                        <a href="#" class="dropdown-item">phụ kiện khác</a>
+                                    </div>
+                                </div>
+                                <a href="./about.html" class="item-list header__item">
+                                    <span class="header__item-name">ganZblog</span>
+                                </a>
+                                <a href="./huongdan.html" class="item-list header__item">
+                                    <span class="header__item-name">chọn size</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__card">
+                        <i class="search-icon-mobile fas fa-search" onclick="inputSearch()"></i>
+                        <i class="menu-icon-mobile fas fa-bars" onclick="mobileMenu()"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__card-icon fas fa-shopping-bag"></i>
+                            <span class="header__cart-notice">0</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <div class="header__cart-header">
+                                    <img src="./asset/img/no-cart.png" alt="no-cart" class="header__cart-no-cart-img">
+                                    <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm trong giỏ hàng</p>
+                                </div>
+      
+                                <ul class="header__cart-list-item"></ul> 
+      
+                                <div class="header__cart-footer">
+                                    <p>Tổng tiền: <span>0 đ</span></p>
+                                    <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2 grid__col-2-cateModblie">
+                        <h2 class="menu-filter" onclick="showmenu()">
+                            <i class="fas fa-filter"></i>
+                            Danh sách
+                        </h2>
+                        <div class="menu-list">
+                            <h3 class="menu-title">Theo Danh Mục</h3>
+                            <ul class="menu-list-lt">
+                                <li class="menu-list-item menu-list-item--active">
+                                    <button class="menu-item-link" onclick="showPanelCate(0,'')">Áo Sơ mi dài</button>
+                                </li>
+                                <li class="menu-list-item">
+                                    <button class="menu-item-link" onclick="showPanelCate(1,'')">Quần Boxer</button>
+                                </li>
+                                <li class="menu-list-item">
+                                    <button class="menu-item-link" onclick="showPanelCate(2,'')">Áo Phông Gió</button>
+                                </li>
+                                <li class="menu-list-item">
+                                    <button class="menu-item-link" onclick="showPanelCate(3,'')">Áo Sơ mi ngắn</button>
+                                </li>
+                                <li class="menu-list-item">
+                                    <button class="menu-item-link" onclick="showPanelCate(4,'')">Áo Len Cao Cấp</button>
+                                </li>
+                            </ul>
+                            <div data-role="page" class="range-price">
+                                <div data-role="header">
+                                  <h1>Theo giá bán</h1>
+                                </div>
+                              
+                                <div data-role="main" class="ui-content">
+                                  <form method="post" action="/action_page_post.php">
+                                    <div data-role="rangeslider" class="ui-rangeslider"> 
+                                      <label for="price-min">Giá:</label>
+                                      <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                      
+                                    </div>
+                                      <input type="submit" data-inline="true" value="Submit">
+                                      <p>Thanh trượt phạm vi có thể hữu ích khi cho phép người dùng chọn phạm vi giá cụ thể khi duyệt qua sản phẩm.</p>
+                                    </form>
+                                </div>
+                              </div> 
+                        </div>
+                    </div>
+    
+                    <div class="grid__col-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button data-filter="popular" class="home-filter__btn btn">Phổ biến</button>
+                            <button data-filter="new" class="home-filter__btn btn">Mới Nhất</button>
+                            <button data-filter="all" class="home-filter__btn btn btn-active">Bán chạy</button>
+                            <!-- <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div> -->
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num"> <span class="home-filter__page-current">1</span>
+                                    /14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="grid__row-cate grid__row-cate-tab">
+                            <!-- <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a href="" class="recommend__product-box">
+                                    <div class="recommend__product-img"></div>
+                                    <h4 class="recommend__product-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</h4>
+                                    <div class="recommend__product-price">
+                                        <span class="recommend__product-price-old">399.000</span>
+                                        <span class="recommend__product-price-new">199.000</span>
+                                    </div>
+                                    <div class="recommend__product-like">
+                                        <span class="recommend__product-item__like recommend__product-item__like--liked">
+                                            <i class="recommend__product-item__like-icon-empty far fa-heart"></i>
+                                            <i class="recommend__product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="recommend__product-item__star">
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="recommend__product-item__star-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <span class="recommend__product-item__buy">Đã bán 88</span>
+                                    </div>
+                                    <div class="recommend__product-btn">
+                                        <div class="recommend__product-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>Chọn mua</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommend__product-sold">
+                                        <span class="recommend__product-text">Bán chạy nhất 100+/ tháng</span>
+                                    </div>
+                                    <div class="recommend__product-top">
+                                        <span>top</span>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                        <div class="grid__row-cate grid__row-cate-shirt">
+                            <!-- redy -->
+                        </div>
+                        <div class="grid__row-cate grid__row-cate-short">
+                            
+                        </div>
+                        <div class="grid__row-cate grid__row-cate-jeans">
+                            
+                        </div>
+                        <div class="grid__row-cate grid__row-cate-jeansShort">
+                            
+                        </div>
+    
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item-active">
+                                <a href="" class="pagination-item__link">
+                                    1
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    2
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    3
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    4
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    14
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__content">
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Địa chỉ liên hệ</h2>
+                        <p class="content__box-description">
+                            HUB Hà Nội: <span>Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội</span>
+                            HUB Tp HCM: <span>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</span>
+                            <!-- <a href="#">Read More</a> -->
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Truy cập nhanh</h2>
+                        <p class="content__box-description">
+                            <span><a href="#">Câu chuyện về GanZ</a></span>
+                            <span><a href="#">Lựa chọn size đồ phù hợp</a></span>   
+                            <span><a href="#">Thế mạnh của GanZ</a></span>
+                            <span><a href="#">Điều khoản sử dụng</a></span>
+                            <span><a href="#">Dịch vụ giao hàng</a></span>
+                            <span>Website: <a class="link-url" href="#">https://www.ganz.com</a> </span>
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Chính sách</h2>
+                        <p class="content__box-description">
+                            <span><a href="#">Liên hệ</a></span>
+                            <span><a href="#">Hỏi đáp</a></span>   
+                            <span><a href="#">Thông tin tài khoản</a></span> 
+                            <span><a href="#">Đơn hàng của bạn</a></span>
+                            <span><a href="#">Tủ đồ định kỳ của bạn</a></span>   
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Liên hệ với chúng tôi</h2>
+                        <form class="input-box">
+                            <input type="text" class="input-text" placeholder="Enter your Email">
+                             <a type="submit" class="box-icon-link">
+                                <i class="icon-link fas fa-arrow-right"></i>
+                            </a>
+                        </form>
+                        <div class="social-box">
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__certification">
+                    <div class="content__certification-title">
+                        <h2 class="content__certification-text">@ CÔNG TY TNHH GANZ ASIA</h2>
+                        <p class="content__certification-des">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.</p>
+                    </div>
+                    <div class="content__certification-logo">
+                        <img src="./asset/img/logoSaleNoti.png" alt="" class="content__certification-img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="notification-message success"></div>
+    <script src="./js/category.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/auth/checkLogin.js"></script>
+    <script src="./js/auth/logout.js"></script>
+</body>
+</html>

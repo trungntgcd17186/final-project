@@ -1,0 +1,350 @@
+form input{
+  background-color: #f5f5f5;
+  border: 0.1rem solid var(--white-color);
+}
+.radio-btn-container{
+  width: fit-content;
+  padding: 0.5rem;
+  border: 0.1rem solid var(--des-color);
+}
+.order-container{
+  margin-top: var(--header-height);
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+.total__money{
+  margin-left: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.address-container, .container__body, .container__voucher, .container__payment{
+  background-color: var(--white-color);
+}
+.address-container{
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.address__content{
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
+  padding: 0 3rem;
+}
+.address__content form {
+  width: 100%;
+}
+
+.address__text{
+  font-weight: 500;
+  margin-right: 1rem;
+}
+.radio-btn-container + .address__text{
+  margin-left: 0.7rem;
+}
+
+.address{
+  display: flex;
+  align-items: center;
+  margin: 0 1.5rem;
+  padding: 0.5rem;
+}
+.address span{
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 0.7rem;
+}
+
+.address--default{
+
+}
+.address-default{
+  color: #c4c4c4;
+  font-size: 1.4rem;
+}
+
+.address__header{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__choose{
+  margin: 1.5rem 0;
+}
+
+.address__submit{
+  display: flex;
+  justify-content: space-between;
+}
+.address__submit.right{
+  justify-content: flex-end;
+}
+.btn--display{
+  color: var(--primary-color);
+}
+
+.container__body{
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.container__header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__header-item{
+  flex-basis: 50%;
+}
+.header-product li{
+  text-align: center;
+  color: var(--black-color);
+  font-weight: 500;
+}
+
+.element-product{
+  display: flex;
+  justify-content: space-between;
+}
+.element-product li{
+  width: 33.3333%;
+  text-align: center;
+  color: var(--black-color);
+  font-weight: 500;
+}
+
+.container__content{
+  padding: 1rem 0;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.container__item{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.content__item{
+  flex-basis: 50%;
+}
+.container__product{
+  display: flex;
+  align-items: center;
+}
+.product__img{
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--text-color);
+}
+.product-name{
+  font-weight: 500;
+  line-height: 1.7rem;
+  height: 1.8rem;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  padding: 0 1rem;
+}
+.containar__product-element{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.containar__product-element li{
+  text-align: center;
+  width: 33.3333%;
+}
+
+.container__note{
+  padding: 1.5rem 0;
+  display: flex;
+  font-weight: 400;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.container__message{
+  flex-basis: 50%;
+  display: flex;
+}
+.input-message{
+  flex-grow: 1;
+  margin: 0 1.5rem;
+  border: none;
+  padding: 0.5rem;
+  outline: var(--text-color);
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+}
+.container__delivery{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+.delivery__display{
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 0 1rem;
+}
+.delivery__display p{
+  font-size: 1.4rem;
+}
+
+.container__footer{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container__heading span{
+  font-weight: 600;
+}
+
+.container__voucher{
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.voucher__link{
+  padding: 0.5rem 0;
+}
+.voucher__link span{
+  margin-right: 0.5rem;
+}
+
+.container__payment{
+  padding: 2rem;
+  border-radius: 5px;
+}
+.payment__header{
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.payment__heading{
+  margin-right: 1.5rem;
+}
+.container__method{
+  display: flex;
+}
+.container__method .btn.selected{
+  border: 1px solid var(--primary-color);
+}
+
+.payment__body{
+  padding: 1rem 0;
+  text-align: right;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.payment__body span{
+  font-weight: 500;
+}
+.ml-2{
+  margin-left: 1rem;
+}
+.payment__footer{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment__footer-note{
+  color: #c4c4c4;
+}
+.payment__footer-note a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--white-color);
+  margin: 10% auto; 
+  padding: 0.2rem;
+  width: 52%; /* Could be more or less, depending on screen size */
+}
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-display{
+  padding: 2rem;
+}
+.modal-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  color: var(--des-color);
+  float: right;
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-voucher {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-body{
+  margin: 0 auto;
+}
+.body--flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.voucher-image{
+  width: 60%;
+  height: auto;
+}
+.body--flex-column p{
+  font-weight: 600;
+}
+.body--flex-column p span{
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+.checked{
+  border: 0.1rem solid var(--primary-color);
+}

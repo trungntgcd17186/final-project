@@ -1,0 +1,608 @@
+.navbar {
+    background-color: var(--primary-color);
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: var(--white-color);
+}
+.logo-back{}
+.logo-back i{
+    font-size: 4.3rem;
+}
+.header__logo{
+    color: var(--white-color);
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.title1 {
+    font-size: 60px;
+    width: 60%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+}
+
+.input {
+    width: 55%;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid var(--white-color);
+    font-size: 1.8rem;
+}
+.icon {
+    font-size: 30px;
+    /* position: absolute; */
+    width: 50%;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.tabs {
+    width: 30%;
+    height: 30%;
+}
+
+.tab-item{
+    cursor: pointer;
+}
+
+.tab-item > p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+.p-active {
+ color: var(--primary-color);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane > p {
+    color: #4a4a4a;
+}
+
+.active {
+    display: block;
+}
+
+.list {
+    font-size: 2rem;
+}
+
+.list-title {
+    font-size: 2.5rem;
+}
+
+
+
+.list-question-container {
+    width: 70%;
+}
+
+.content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+/*=================slider====================*/
+#slider {
+    text-align:left;
+    height: 150px;
+    width: 90%;
+    margin-left: 40px;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#slide {
+    width: 10px;
+}
+
+#overflow {
+    width: 100%;
+    background-color: #faeddc;
+    overflow: hidden;
+    height: 150px;
+}
+
+.inner {
+    display: flex;
+    height: 150px;
+    width: 50%;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -133%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -237%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -343%;
+}
+
+
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 150px;
+}
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: block;
+    height: 100%;
+    color: #fff;
+}
+
+.slide-content {
+    margin-left: 10px;
+    height: 150px;
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.slide-content-2 {
+    margin-left: 10px;
+    height: 150px;
+    width: 115%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.slide-content-3 {
+    height: 150px;
+    margin-left: 150px;
+    width: 110%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.slide-content-4 {
+    margin-left: 300px;
+    height: 150px;
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.p-slider {
+    width: 70%;
+}
+
+.p-slider-2 {
+    width: 90%;
+}
+
+.p-slider-3 {
+    width: 100%;
+}
+
+.p-slider-4 {
+    width: 100%;
+}
+
+.bullets {
+    margin: 100px ;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    display: inline-block; 
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+#is-active1, #is-active2, #is-active3, #is-active4 {
+    display: inline-block; 
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+    background-color: var(--primary-color);
+}
+
+/*=================slider-end====================*/
+.list-question {
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+
+.tab-pane > p {
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.tab-pane > h1 {
+    font-size: 1.8rem;
+    margin-top: 35px;
+    border-bottom: 1px solid rgb(240, 237, 237) ;
+    height: 30px;
+}
+#h3-move , #h3-move2, #h3-move3, #h3-move4  {
+    font-size: 1.4rem;
+    margin-top: 35px;
+}
+
+
+.contact-container {
+    margin-top: 50px;
+}
+
+.contact {
+    
+    width: 60%;
+}
+
+.contact-item-container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    width: 49%;
+    height: 60px;
+    border: 1px solid rgb(197, 195, 195)  ;
+}
+
+.email {
+    color: rgb(230, 18, 159) ;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.call {
+    color: rgb(51, 180, 116) ;
+}
+
+.item-content {
+    line-height: 0.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.about-footer {
+    margin-top: 30px;
+    border-top: 1px solid rgb(240, 237, 237) ;
+    font-size: 1.4rem;
+    height: 100px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-footer {
+    display: flex;
+}
+
+.social-contact {
+    display: flex;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.fb {
+    font-size: 30px;
+    color: #3B5998;
+}
+
+.twitter {
+    margin-left: 15px;
+    font-size: 33px;
+    color: #1DA1F2
+}
+
+.info-footer {
+    display: flex;
+}
+
+.info-footer > p {
+    margin-left: 10px;
+    width: 130px;
+    border-right: 1px solid gray;
+}
+.info-footer > p:last-child {
+    margin-right: 20px;
+    
+}
+
+.about-footer > p:first-child {
+    margin-left: 30px;
+}
+
+.a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    line-height: 2.5;
+}
+
+/*===============Search==============*/
+  
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    width: 100%;
+    height: 60px;
+    padding: 14px 20px 12px 45px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 55%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 100%;
+    border: 1px solid #ddd;
+    z-index: 999;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .btn-close {
+      width: 50px;
+      height: 30px;
+  }
+
+ 
+
+  
+  @media  screen and (max-width:1024px) {
+    .navbar .title1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .navbar .dropdown {
+        width: 70%;
+    }
+
+    .tabs {
+        margin-left: 15px;
+    }
+
+    .list-question-container{
+        margin-left: -30px;
+    }
+
+    .tabs .tab-item > p {
+        font-size: 1.4rem;
+    }
+
+    #slider #slide3:checked ~ #slides .inner {
+        margin-left: -248%;
+    }
+
+    #slider #slide4:checked ~ #slides .inner {
+        margin-left: -367%;
+    }
+
+    .contact-container .contact {
+        width: 100%;
+    }
+
+    .contact .contact-item-container {
+        width: 70%;
+    }
+
+    .contact-item-container .contact-item {
+        width: 48%;
+    }
+
+    .about-footer > p {
+        font-size: 1.2rem;
+    }
+
+    .about-footer .info-footer > p {
+        font-size: 1.2rem;
+        margin-left: 10px;
+        width: 110px;
+    }
+
+    .contact-footer .social-contact {
+        margin-top: 7px;
+    }
+
+    .social-contact .fb {
+        font-size: 27px;
+    }
+
+    .social-contact .twitter {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+}
+
+@media  screen and (max-width:739px) {
+    .main .navbar {
+        height: 300px;
+    }
+
+    .navbar .title1 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .navbar .dropdown {
+        width: 85%;
+    }
+
+    .dropdown #myInput {
+        height: 40px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container .tabs {
+        width: 100%;
+    }
+
+    .main-container .list-question-container {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .list-question-container #slider {
+        width: 98%;
+        margin-left: 15px;
+    }
+
+    .list-question-container .list-question {
+        margin-left: 20px;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .contact-container .contact {
+        width: 100%;
+    }
+
+    .contact .contact-item-container {
+        width: 100%;
+    }
+
+    .contact-item-container .contact-item {
+        width: 49%;
+    }
+
+    .about-footer > p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .about-footer .info-footer > p {
+        display: none;
+    }
+
+    .contact-footer .social-contact {
+        margin-top: 7px;
+    }
+
+    .social-contact .fb {
+        display: none;
+    }
+
+    .social-contact .twitter {
+        display: none;
+    }
+
+    #slider #slide2:checked ~ #slides .inner {
+        margin-left: -130%;
+    }
+
+    #slider #slide3:checked ~ #slides .inner {
+        margin-left: -250%;
+    }
+
+    #slider #slide4:checked ~ #slides .inner {
+        margin-left: -377%;
+    }
+}

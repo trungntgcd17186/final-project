@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/about.css">
+    <link rel="stylesheet" href="./asset/css/navbar.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/resposive.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>Câu chuyện về GanZ - GanZ</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <ul class="header__navbar-list hide-tab-mobile">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng E-commerce</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-poiter">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="mobile-menu" class="header__navbar-list header__navbar-list-mobile">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+    
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo khoát tay dài màu trắng tuyệt đẹp cho nam giới.</span>
+                                                <span class="header__notify-discription">Sản phẩm được làm bằng chất liệu thoáng mát</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/underwear2.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</span>
+                                                <span class="header__notify-discription">Quần mang thoải mái không bị bí</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt3.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo lông mùa đông cho nam giới</span>
+                                                <span class="header__notify-discription">Sản phẩm cực kì ấm cúm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="./notification.html" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./help.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./about.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-spa"></i>
+                                About
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user header__navbar-item--separate">
+                            <a href="./login.html" class="header__navbar-item-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user">
+                            <a href="./register.html" class="header__navbar-item-link">
+                                Đăng kí
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">
+                                Thanh Trung
+                            </span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <button id="logout" onClick="handleLogout()">Đăng xuất</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="icon-cancel" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </ul>
+                </div>
+    
+                <!-- search -->
+                <div class="header-with-search">
+                    <a href="./index.html"class="header__logo">
+                        <i class="header__logo-icon fas fa-cannabis"></i>
+                        <span class="header-search__logo-name">GanZ</span>
+                    </a>
+                    <div class="header__search-container">
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." class="header__search-input">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Khoát Nam</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Sơ Mi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="header__search-item">
+                            <div class="search-item-list">
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">sale</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">
+                                            GanZ Outlet ưu đãi giảm 50%
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">bộ sưu tập</span>
+                                    <i class="header__item-icon fas fa-chevron-down"></i>
+                                </a>
+                                
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">áo</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Áo sơ mi</a>
+                                        <a href="#" class="dropdown-item">Áo Polo</a>
+                                        <a href="#" class="dropdown-item">Áo thể thao</a>
+                                        <a href="#" class="dropdown-item">Áo thun</a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">quần short</span>
+                                </a>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">quần lót</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">quần lót Trunk</a>
+                                        <a href="#" class="dropdown-item">quần lót Brief</a>
+                                        <a href="#" class="dropdown-item">quần lót Boxer Brief</a>
+                                    </div>
+                                </div>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">phụ kiện</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">tất</a>
+                                        <a href="#" class="dropdown-item">khẩu trang</a>
+                                        <a href="#" class="dropdown-item">phụ kiện khác</a>
+                                    </div>
+                                </div>
+                                <a href="./about.html" class="item-list header__item">
+                                    <span class="header__item-name">ganZblog</span>
+                                </a>
+                                <a href="./huongdan.html" class="item-list header__item">
+                                    <span class="header__item-name">chọn size</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__card">
+                        <i class="search-icon-mobile fas fa-search" onclick="inputSearch()"></i>
+                        <i class="menu-icon-mobile fas fa-bars" onclick="mobileMenu()"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__card-icon fas fa-shopping-bag"></i>
+                            <span class="header__cart-notice">0</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <div class="header__cart-header">
+                                    <img src="./asset/img/no-cart.png" alt="no-cart" class="header__cart-no-cart-img">
+                                    <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm trong giỏ hàng</p>
+                                </div>
+      
+                                <ul class="header__cart-list-item"></ul> 
+      
+                                <div class="header__cart-footer">
+                                    <p>Tổng tiền: <span>0 đ</span></p>
+                                    <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+      
+        <div class="grid about-container">
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Trang chính</a></li>
+                <li>Câu chuyện về GanZ</li>
+            </ul>
+
+                <h1 class="heading">Câu chuyện về <span>GanZ</span></h1>
+                <div class="main-container">
+                    <img src="https://www.coolmate.me/images/about-us-model.webp" class="about-us-Image" alt="">
+
+                    <div class="about-us-Content">
+    
+                        <div class="content-AboutGanZ">
+                            <p>
+                                Được hình thành trong thời đại 4.0, GanZ áp dụng sức mạnh của công nghệ vào thời trang để đưa ra <span class="text-orange">Giải pháp mua sắm đồ cơ bản cho nam giới</span> với mô hình tiện lợi hơn, 
+                                tiết kiệm hơn - khách hàng có thể mua cả tủ đồ đảm bảo chất lượng, giá tốt, giao hàng nhanh chóng, và dịch vụ chăm sóc vượt trội.
+                            </p>
+                            <p>
+                                Sứ mệnh của GanZ là giúp nam giới mua sắm dễ dàng hơn bởi GanZ tin rằng các đấng mày râu xứng đáng có được điều đó. 
+                                Bằng chính những trải nghiệm lâu dài và nghiên cứu tâm huyết, chúng tôi tin rằng bằng cách đưa đến <span class="text-orange">sự đơn giản, tiện lợi và giá cả hợp lý</span> sẽ là con đường giúp chúng tôi thực hiện sứ mệnh của mình.
+                            </p>
+                            <p>Câu chuyện được sinh ra từ tủ đồ của các cánh mày râu, nơi được cho là ‘1 màu’,
+                                ‘đơn điệu’ và ‘ít được chăm chút’. Bởi lẽ thực tế, việc mua sắm đối với các anh là không
+                                thường xuyên, ngại phải đi nhiều nơi để mua đủ những đồ mình muốn, đặc biệt là những món đồ
+                                cơ bản nhất. GanZ hiểu được rằng những chiếc áo phông, đôi tất hay quần lót sẽ không bao giờ
+                                thiếu vắng trong tủ đồ và bằng chính sứ mệnh của mình, GanZ sẽ dần thay đổi thói quen của
+                                các anh bằng cách thức mua hàng tiện lợi nhất và những sản phẩm chất lượng tốt nhất.
+                            </p>
+                        </div>
+    
+                        <div class="content-Slogan">
+                            <h2 class="slogan">Slogan:</h2>
+                            <p>Tăng thêm độ ngầu đến bất tận với áo phông đen slogan 'GanZ'. Không đơn thuần là
+                                chiếc áo phông đen cổ tròn, phiên bản áo in sẽ tăng thêm sự ngầu cho người mặc với công nghệ
+                                in hiện đại, không gây bí mà còn tăng thêm sự mạnh mẽ và thoải mái.
+                            </p>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <h1 class="heading">Lợi ích nổi bật</h1>
+                <div class="information">
+                    <img src="https://www.coolmate.me/images/about-us-2.webp" class="information--image" alt="">
+                    <div class="information--content information--content-1">
+                        <p class="title">Giải pháp mua đồ mới lạ 
+                            <span class="text-orange">.</span>
+                        </p>
+                        <p>Quên đi những khoản chi trả kha khá và phải đi nhiều nơi lẻ tẻ để có được những món đồ
+                            cơ bản nhất như áo thun, quần short, quần sịp, tất (vớ), chúng tôi mong muốn thay đổi mọi thứ.
+                            Chỉ bằng vài cú click chuột và một tủ đồ đầy đủ sẽ đến gõ cửa nhà bạn ngay sau đó.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="information right">
+                    <div class="information--content information--content-2">
+                        <p class="title">Trải nghiệm mua sắm thông minh 
+                            <span class="text-orange">.</span>
+                        </p>
+                        <p>GanZ đem lại sự thoải mái nhất trong mua sắm. Bạn có thể tự do xem bất kỳ món hàng
+                            nào, theo dõi những món đồ muốn mua, mua hàng trong tích tắc và thậm chí là có thể đổi trả 60
+                            ngày miễn phí vì bất kỳ lý do gì.
+                        </p>
+                    </div>
+                    <img src="https://nhatthucmedia.com/images_upload/1c36760797477e192756.jpg" class="information--image" alt="">
+                </div>
+    
+                <div class="information">
+                    <img src="https://1.bp.blogspot.com/-DLG9e2Hwjco/XseEzKy2iHI/AAAAAAAAWIY/vy-ZN1repCcgZBMHgf-U8-R0dUBeI5qUwCPcBGAYYCw/s1600/cach-phoi-do-nam-chat2.jpg?dl=1" class="information--image" alt="">
+                    <div class="information--content information--content-3">
+                        <p class="title">
+                            Giá cả hợp lý 
+                            <span class="text-orange">.</span>
+                        </p>
+                        <p>Tất cả những gì bạn thấy trên web là tất cả những gì bạn phải trả, cam kết không có
+                            chi phí phát sinh trong quá trình mua và đổi trả hàng.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="choose-GanZ">
+                    <h2>Thoải mái hơn - Tiện lợi hơn - Hợp lý hơn</h2>
+                    <div class="choose-GanZ-2">
+                        <p>Chọn</p>
+                        <button class="btn btn--primary">GanZ</button>
+                        <p>?</p>
+                    </div>
+    
+                </div>
+        </div>
+      
+        <footer class="footer">
+          <div class="grid">
+              <div class="footer__content">
+                  <div class="footer__content-box">
+                      <h2 class="content__box-title">Địa chỉ liên hệ</h2>
+                      <p class="content__box-description">
+                          HUB Hà Nội: <span>Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội</span>
+                          HUB Tp HCM: <span>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</span>
+                          <!-- <a href="#">Read More</a> -->
+                      </p>
+                  </div>
+                  <div class="footer__content-box">
+                      <h2 class="content__box-title">Truy cập nhanh</h2>
+                      <p class="content__box-description">
+                          <span><a href="#">Câu chuyện về GanZ</a></span>
+                          <span><a href="#">Lựa chọn size đồ phù hợp</a></span>   
+                          <span><a href="#">Thế mạnh của GanZ</a></span>
+                          <span><a href="#">Điều khoản sử dụng</a></span>
+                          <span><a href="#">Dịch vụ giao hàng</a></span>
+                          <span>Website: <a class="link-url" href="#">https://www.ganz.com</a> </span>
+                      </p>
+                  </div>
+                  <div class="footer__content-box">
+                      <h2 class="content__box-title">Chính sách</h2>
+                      <p class="content__box-description">
+                          <span><a href="#">Liên hệ</a></span>
+                          <span><a href="#">Hỏi đáp</a></span>   
+                          <span><a href="#">Thông tin tài khoản</a></span> 
+                          <span><a href="#">Đơn hàng của bạn</a></span>
+                          <span><a href="#">Tủ đồ định kỳ của bạn</a></span>   
+                      </p>
+                  </div>
+                  <div class="footer__content-box">
+                      <h2 class="content__box-title">Liên hệ với chúng tôi</h2>
+                      <form class="input-box">
+                          <input type="text" class="input-text" placeholder="Enter your Email">
+                           <a type="submit" class="box-icon-link">
+                              <i class="icon-link fas fa-arrow-right"></i>
+                          </a>
+                      </form>
+                      <div class="social-box">
+                          <a href="#" class="social-link">
+                              <i class="icon-box fab fa-facebook-f"></i>
+                          </a>
+                          <a href="#" class="social-link">
+                              <i class="icon-box fab fa-twitter"></i>
+                          </a>
+                          <a href="#" class="social-link">
+                              <i class="icon-box fab fa-google"></i>
+                          </a>
+                          <a href="#" class="social-link">
+                              <i class="icon-box fab fa-pinterest-p"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="content__certification py-4">
+                  <div class="content__certification-title">
+                      <h2 class="content__certification-text">@ CÔNG TY TNHH GANZ ASIA</h2>
+                      <p class="content__certification-des">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.</p>
+                  </div>
+                  <div class="content__certification-logo">
+                      <img src="./asset/img/logoSaleNoti.png" alt="" class="content__certification-img">
+                  </div>
+              </div>
+          </div>
+        </footer>
+    
+        <script src="./js/app.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/auth/logout.js"></script>
+        <script src="./js/auth/checkLogin.js"></script>
+    </div>
+</body>
+</html>

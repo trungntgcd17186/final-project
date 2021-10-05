@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/navbar.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/resposive.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>Trang chủ - GanZ</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <ul class="header__navbar-list hide-tab-mobile">
+                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng E-commerce</li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-poiter">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="mobile-menu" class="header__navbar-list header__navbar-list-mobile">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+    
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt1.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo khoát tay dài màu trắng tuyệt đẹp cho nam giới.</span>
+                                                <span class="header__notify-discription">Sản phẩm được làm bằng chất liệu thoáng mát</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/underwear2.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</span>
+                                                <span class="header__notify-discription">Quần mang thoải mái không bị bí</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/shirt3.jpeg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo lông mùa đông cho nam giới</span>
+                                                <span class="header__notify-discription">Sản phẩm cực kì ấm cúm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="./notification.html" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./help.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./about.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-spa"></i>
+                                About
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user header__navbar-item--separate">
+                            <a href="./login.html" class="header__navbar-item-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-none-user">
+                            <a href="./register.html" class="header__navbar-item-link">
+                                Đăng kí
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">
+                                Thanh Trung
+                            </span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <button id="logout" onClick="handleLogout()">Đăng xuất</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="icon-cancel" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </ul>
+                </div>
+    
+                <!-- search -->
+                <div class="header-with-search">
+                    <a href="./index.html"class="header__logo">
+                        <i class="header__logo-icon fas fa-cannabis"></i>
+                        <span class="header-search__logo-name">GanZ</span>
+                    </a>
+                    <div class="header__search-container">
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." class="header__search-input">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Khoát Nam</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Áo Sơ Mi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="header__search-item">
+                            <div class="search-item-list">
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">sale</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">
+                                            GanZ Outlet ưu đãi giảm 50%
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">bộ sưu tập</span>
+                                    <i class="header__item-icon fas fa-chevron-down"></i>
+                                </a>
+                                
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">áo</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Áo sơ mi</a>
+                                        <a href="#" class="dropdown-item">Áo Polo</a>
+                                        <a href="#" class="dropdown-item">Áo thể thao</a>
+                                        <a href="#" class="dropdown-item">Áo thun</a>
+                                    </div>
+                                </div>
+                                <a href="" class="item-list header__item">
+                                    <span class="header__item-name">quần short</span>
+                                </a>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">quần lót</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">quần lót Trunk</a>
+                                        <a href="#" class="dropdown-item">quần lót Brief</a>
+                                        <a href="#" class="dropdown-item">quần lót Boxer Brief</a>
+                                    </div>
+                                </div>
+                                <div class="item-list dropdown">
+                                    <a href="" class="header__item">
+                                        <span class="header__item-name">phụ kiện</span>
+                                        <i class="header__item-icon fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">tất</a>
+                                        <a href="#" class="dropdown-item">khẩu trang</a>
+                                        <a href="#" class="dropdown-item">phụ kiện khác</a>
+                                    </div>
+                                </div>
+                                <a href="./about.html" class="item-list header__item">
+                                    <span class="header__item-name">ganZblog</span>
+                                </a>
+                                <a href="./huongdan.html" class="item-list header__item">
+                                    <span class="header__item-name">chọn size</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__card">
+                        <i class="search-icon-mobile fas fa-search" onclick="inputOpenSearch()"></i>
+                        <i class="menu-icon-mobile fas fa-bars" onclick="mobileMenu()"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__card-icon fas fa-shopping-bag"></i>
+                            <span class="header__cart-notice">0</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <div class="header__cart-header">
+                                    <img src="./asset/img/no-cart.png" alt="no-cart" class="header__cart-no-cart-img">
+                                    <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm trong giỏ hàng</p>
+                                </div>
+      
+                                <ul class="header__cart-list-item"></ul> 
+      
+                                <div class="header__cart-footer">
+                                    <p>Tổng tiền: <span>0 đ</span></p>
+                                    <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <div class="grid__full-width">
+        <div class="app__slider">
+                <div class="slider__container">
+                    <div class="grid">
+                        <div class="slider__content">
+                            <div class="slider__container-delivery">
+                                <h4 class="slider__container-delivery-name">Delivering Happiness</h4>
+                                <h2 class="slider__container-delivery-date">New Shopping</h2>
+                                <h2 class="slider__container-delivery-freeship">Experience for Men</h2>
+                            </div>
+                            <div class="slider__container-box">
+                                <div class="slider__box">
+                                    <div class="slider__box-img">
+                                        <a href=""><img src="./asset/img/slider3.jpeg" alt="slider" class="slider-image"></a>
+                                    </div>
+                                </div>
+                                <div class="slider__box">
+                                    <div class="slider__box-img">
+                                        <a href=""><img src="./asset/img/slider2.jpeg" alt="slider" class="slider-image"></a>
+                                    </div>
+                                </div>
+                                <div class="slider__box">
+                                    <div class="slider__box-img">
+                                        <a href=""><img src="./asset/img/slider1.jpeg" alt="slider" class="slider-image"></a>
+                                    </div>
+                                </div>
+                                <div class="empty"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="app__express">
+            <div class="grid">
+                <div class="gird__row">
+                    <div class="slider__express slider__express-mobile">
+                        <div class="slider__express-box">
+                            <i class="express-icon far fa-clock"></i>
+                            <p class="slider__express-des">Giao hàng <span>24h</span> ở HN & HCM 2-3 ngày ở tỉnh khác</p>
+                        </div>
+                        <div class="slider__express-box slider__express-box-border">
+                            <i class="express-icon fas fa-shipping-fast"></i>
+                            <p class="slider__express-des">Miễn phí vận chuyển <span>cho đơn hàng trên 300k</span></p>
+                        </div>
+                        <div class="slider__express-box slider__express-box-border">
+                            <i class="express-icon fas fa-undo"></i>
+                            <p class="slider__express-des"><span>60 ngày</span> đổi trả cho bất kì lí do gì</p>
+                        </div>
+                        <div class="slider__express-box slider__express-box-border">
+                            <i class="express-icon fas fa-home"></i>
+                            <p class="slider__express-des">Giao hàng <span>tận nơi</span> nhận hoàn trả, hoàn tiền trong <span>24h</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row grid__row-table">
+                    <div class="content__product-new">
+                        <h2 class="product__new-heading">mới ra mắt</h2>
+                        <a href="./category.html"class="product__new active">
+                            <img src="./asset/img/img1.png" alt="slide" class="new__img">
+                        </a>
+                        <a href="./category.html"class="product__new">
+                            <img src="./asset/img/slide2.png" alt="slide" class="new__img"> 
+                        </a>
+                        <a href="./category.html"class="product__new">
+                            <img src="./asset/img/slide3.png" alt="slide" class="new__img">
+                        </a>
+                        <div class="navigation">
+                            <div class="btn1 active"></div>
+                            <div class="btn1"></div>
+                            <div class="btn1"></div>
+                        </div>
+                    </div>
+                    <div class="content__product-new">
+                            <h2 class="product__new-heading2">nổi bật</h2>
+                            <div class="product__new__slide is-active">
+                                <div class="product__new-box">
+                                    <div class="product__new-img2">
+                                    </div>
+                                    <div class="product__new-content">
+                                        <div class="new__content-box">
+                                            <a href="" class="new__content-title-link">
+                                                <h2 class="new__content-title">
+                                                        Áo thun nam 100% Cotton Essential Tee
+                                                </h2>
+                                            </a>
+                                            <div class="new__content-evluate">
+                                                <h3 class="new__content-price">299.000đ</h3>
+                                                <div>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p class="new__content-sale">
+                                                Mua 2 chỉ còn 161k/chiếc
+                                            </p>
+                                            <p class="new__content-des">
+                                                Mua áo thun nam 100% cotton đẹp, thấm hút tốt, co dãn 2 chiều, chuẩn form nam giới tại GanZ. Giá tốt, giao hàng 24h, COD toàn quốc, đổi trả 60 ngày
+                                            </p>
+                                        </div>
+                                        <a href="" class="new__content-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>chọn mua</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__new__slide">
+                                <div class="product__new-box">
+                                    <div class="product__new-img4">
+                                        
+                                    </div>
+                                    <div class="product__new-content">
+                                        <div class="new__content-box">
+                                            <a href="" class="new__content-title-link">
+                                                <h2 class="new__content-title">
+                                                        Áo thun nam 100% Cotton Essential Tee
+                                                </h2>
+                                            </a>
+                                            <div class="new__content-evluate">
+                                                <h3 class="new__content-price">299.000đ</h3>
+                                                <div>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p class="new__content-sale">
+                                                Mua 2 chỉ còn 161k/chiếc
+                                            </p>
+                                            <p class="new__content-des">
+                                                Mua áo thun nam 100% cotton đẹp, thấm hút tốt, co dãn 2 chiều, chuẩn form nam giới tại GanZ. Giá tốt, giao hàng 24h, COD toàn quốc, đổi trả 60 ngày
+                                            </p>
+                                        </div>
+                                        <a href="" class="new__content-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>chọn mua</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__new__slide">
+                                <div class="product__new-box">
+                                    <div class="product__new-img4">
+                                        
+                                    </div>
+                                    <div class="product__new-content">
+                                        <div class="new__content-box">
+                                            <a href="" class="new__content-title-link">
+                                                <h2 class="new__content-title">
+                                                        Áo thun nam 100% Cotton Essential Tee
+                                                </h2>
+                                            </a>
+                                            <div class="new__content-evluate">
+                                                <h3 class="new__content-price">299.000đ</h3>
+                                                <div>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p class="new__content-sale">
+                                                Mua 2 chỉ còn 161k/chiếc
+                                            </p>
+                                            <p class="new__content-des">
+                                                Mua áo thun nam 100% cotton đẹp, thấm hút tốt, co dãn 2 chiều, chuẩn form nam giới tại GanZ. Giá tốt, giao hàng 24h, COD toàn quốc, đổi trả 60 ngày
+                                            </p>
+                                        </div>
+                                        <a href="" class="new__content-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span>chọn mua</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation1">
+                                <div class="btn2 is-active"></div>
+                                <div class="btn2"></div>
+                                <div class="btn2"></div>
+                            </div>
+                      
+                    </div>
+                </div>
+
+                <div class="feature__product">
+                    <h2 class="feature__product-title">Sản phẩm phổ biến</h2>
+                    <div class="grid__row grid__row-feature">
+                       
+                    </div>
+                </div>
+
+                <div class="recommend__product">
+                    <h2 class="recommend__product-title">Đề xuất cho bạn</h2>
+                    <div class="grid__row grid__row-recommend">
+                        
+                    </div>
+                </div>
+
+                <div class="feedback__customer">
+                    <div class="feedback__customer-title">
+                        <div class="feedback__customer-name"><h2>khách hàng nói gì về ganz</h2></div>
+                    </div>
+                    <div class="feedback__customer-content">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+            
+                        <div class="customer__content-container first">
+                            <div class="customer__content-box">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
+                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
+                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
+                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
+                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
+                                        khác
+                                        => doanh thu tăng trưởng
+                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
+                                        vụ lên nhé
+                                        Chúc các bạn thành công hơn nữa..
+                                    </p>
+                                    <h4 class="customer__content-name">Hoàng Quốc Trung</h4>
+                                </div>
+                                <div class="customer__content-img">
+            
+                                </div>
+                            </div>
+                            <div class="customer__content-box customer__content-box-mobile">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Mình đã mua set này về mặc thấy rất thích. Vải xịn, mặc thoáng mát,
+                                        không nóng nực. Sợi vải mềm, co giãn tốt. Còn quần thì dày, cho cảm
+                                        giác cao cấp, màu đẹp nữa. Đặc biệt giao cực nhanh luôn, sáng nhân
+                                        viên gọi để xác nhận, chiều 5h mình nhận được hàng rồi. Hàng đóng
+                                        gọi đẹp và chỉn chu, mình rất thích. Chỉ có quần boxer đai quần bóp
+                                        hơi chật với mình thôi. Và mình thấy giá rất cạnh tranh, combo này
+                                        có lẽ là best choice rồi. Mình chắc chắn sẽ quay lại gom thêm vài
+                                        set này nữa, vì mình đơn giản, y như set này vậy =)))
+                                    </p>
+                                    <h4 class="customer__content-name">Nguyễn Tất Thắng</h4>
+                                </div>
+                                <div class="customer__content-img">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer__content-container">
+                            <div class="customer__content-box">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
+                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
+                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
+                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
+                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
+                                        khác
+                                        => doanh thu tăng trưởng
+                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
+                                        vụ lên nhé
+                                        Chúc các bạn thành công hơn nữa..
+                                    </p>
+                                    <h4 class="customer__content-name">Hoàng Quốc Trung</h4>
+                                </div>
+                                <div class="customer__content-img">
+            
+                                </div>
+                            </div>
+                            <div class="customer__content-box customer__content-box-mobile">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Mình đã mua set này về mặc thấy rất thích. Vải xịn, mặc thoáng mát,
+                                        không nóng nực. Sợi vải mềm, co giãn tốt. Còn quần thì dày, cho cảm
+                                        giác cao cấp, màu đẹp nữa. Đặc biệt giao cực nhanh luôn, sáng nhân
+                                        viên gọi để xác nhận, chiều 5h mình nhận được hàng rồi. Hàng đóng
+                                        gọi đẹp và chỉn chu, mình rất thích. Chỉ có quần boxer đai quần bóp
+                                        hơi chật với mình thôi. Và mình thấy giá rất cạnh tranh, combo này
+                                        có lẽ là best choice rồi. Mình chắc chắn sẽ quay lại gom thêm vài
+                                        set này nữa, vì mình đơn giản, y như set này vậy =)))
+                                    </p>
+                                    <h4 class="customer__content-name">Nguyễn Tất Thắng</h4>
+                                </div>
+                                <div class="customer__content-img">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer__content-container">
+                            <div class="customer__content-box">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
+                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
+                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
+                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
+                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
+                                        khác
+                                        => doanh thu tăng trưởng
+                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
+                                        vụ lên nhé
+                                        Chúc các bạn thành công hơn nữa..
+                                    </p>
+                                    <h4 class="customer__content-name">Hoàng Quốc Trung</h4>
+                                </div>
+                                <div class="customer__content-img">
+            
+                                </div>
+                            </div>
+                            <div class="customer__content-box customer__content-box-mobile">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Mình đã mua set này về mặc thấy rất thích. Vải xịn, mặc thoáng mát,
+                                        không nóng nực. Sợi vải mềm, co giãn tốt. Còn quần thì dày, cho cảm
+                                        giác cao cấp, màu đẹp nữa. Đặc biệt giao cực nhanh luôn, sáng nhân
+                                        viên gọi để xác nhận, chiều 5h mình nhận được hàng rồi. Hàng đóng
+                                        gọi đẹp và chỉn chu, mình rất thích. Chỉ có quần boxer đai quần bóp
+                                        hơi chật với mình thôi. Và mình thấy giá rất cạnh tranh, combo này
+                                        có lẽ là best choice rồi. Mình chắc chắn sẽ quay lại gom thêm vài
+                                        set này nữa, vì mình đơn giản, y như set này vậy =)))
+                                    </p>
+                                    <h4 class="customer__content-name">Nguyễn Tất Thắng</h4>
+                                </div>
+                                <div class="customer__content-img">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer__content-container">
+                            <div class="customer__content-box">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
+                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
+                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
+                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
+                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
+                                        khác
+                                        => doanh thu tăng trưởng
+                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
+                                        vụ lên nhé
+                                        Chúc các bạn thành công hơn nữa..
+                                    </p>
+                                    <h4 class="customer__content-name">Hoàng Quốc Trung</h4>
+                                </div>
+                                <div class="customer__content-img">
+            
+                                </div>
+                            </div>
+                            <div class="customer__content-box customer__content-box-mobile">
+                                <div class="customer__content-info">
+                                    <div class="customer__content-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="customer__content-des">
+                                        Mình đã mua set này về mặc thấy rất thích. Vải xịn, mặc thoáng mát,
+                                        không nóng nực. Sợi vải mềm, co giãn tốt. Còn quần thì dày, cho cảm
+                                        giác cao cấp, màu đẹp nữa. Đặc biệt giao cực nhanh luôn, sáng nhân
+                                        viên gọi để xác nhận, chiều 5h mình nhận được hàng rồi. Hàng đóng
+                                        gọi đẹp và chỉn chu, mình rất thích. Chỉ có quần boxer đai quần bóp
+                                        hơi chật với mình thôi. Và mình thấy giá rất cạnh tranh, combo này
+                                        có lẽ là best choice rồi. Mình chắc chắn sẽ quay lại gom thêm vài
+                                        set này nữa, vì mình đơn giản, y như set này vậy =)))
+                                    </p>
+                                    <h4 class="customer__content-name">Nguyễn Tất Thắng</h4>
+                                </div>
+                                <div class="customer__content-img">
+                                    
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- auto play  -->
+            
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="product__process">
+                <div class="grid__full-width">
+                    <div class="product__process-logo">
+                        <img src="./asset/img/download.png" alt="logo" class="product__process-img">
+                        <h4 class="product__process-title">Trải nghiệm mua sắm <span>GanZ</span></h4>
+                        <h2 class="product__process-text">Cam Kết 100% <span>Hài Lòng</span></h2>
+                    </div>
+                    <div class="product__background">
+                        <img src="./asset/img/daphop.jpeg" alt="daphop" class="product__image-background">
+                        <img src="./asset/img/3327_Ha_Thu_3.jpeg" alt="daphop" class="product__image-background1">
+                        <img src="./asset/img/daphop1.jpeg" alt="daphop" class="product__image-background2">
+                        <img src="./asset/img/daphop2.jpeg" alt="daphop" class="product__image-background3">
+                        <img src="./asset/img/daphop3.jpeg" alt="daphop" class="product__image-background4">
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="product__process-content">
+                        <ul class="product__process-list">
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>01. Liên hệ chăm sóc khách hàng dễ dàng</span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>02. Thời gian trao đổi với các bạn tổng đài viên là không hạn chế</span><i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>03. Văn hoá say YES trong xử lý tình huống</span>  <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>04. Sự tương tác mang tính cá nhân hoá </span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>05. CSKH hoạt động 13,5h/1 ngày và 7 ngày/1 tuần </span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>06. Dịch vụ đổi trả miễn phí 60 ngày với BẤT CỨ LÝ DO GÌ </span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>07. Dịch vụ đổi trả tận nơi của Coolmate</span>  <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>08. Trả hàng hoàn tiền và có bưu tá lấy hàng tận nơi  </span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>09. Giao hàng nhanh mà không thu thêm phí</span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item"><span>10. Đóng gói cẩn thận </span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            <a href="" class="product__process-item-link">
+                                <li class="product__process-item product__process-item-end"> <span>11. Dịch vụ tặng chiếc tất/vớ bị mất </span> <i class="icon-process fas fa-plus"></i></li>
+                            </a>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process__produc-url">
+                    <a href="./deliveryDetail.html" class="product__process-link"><span>Xem chi tiết</span></a>
+                </div>
+            </div>
+            <div class="grid__full-width">
+                <div class="banner">
+                    <div class="banner__box">
+                        <h2 class="banner__box-content">
+                            Mặc <span>Đẹp</span> <p>Sống <span>Chất</span></p> <p class="end">cùng <span>GanZ</span> </p>
+                        </h2>
+                    </div>
+                    <div class="banner__box-image">
+                        <div class="banner__box1">
+                            <div class="banner__box-des">
+                                <h3 class="banner__box-name">
+                                    <a href="">Phim Netflix: Đừng bỏ lỡ 12 bộ phim Netflix tháng 9/2021 cực hấp dẫn này</a>
+                                </h3>
+                                <a href="" class="banner__box-link">
+                                    xem chi tiết 
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner__box2">
+                            <div class="banner__box-des">
+                                <h3 class="banner__box-name">
+                                    <a href="">Phim chiếu rạp tháng 9/2021 có gì hấp dẫn?</a>
+                                </h3>
+                                <a href="" class="banner__box-link">
+                                    xem chi tiết 
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner__box3">
+                            <div class="banner__box-des">
+                                <h3 class="banner__box-name">
+                                    <a href="">Điểm Danh 10 Địa Điểm Mua Áo Khoác Thể Thao Nam Đẹp Và Uy Tín</a>
+                                </h3>
+                                <a href="" class="banner__box-link">
+                                    xem chi tiết 
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner__box4">
+                            <div class="banner__box-des">
+                                <h3 class="banner__box-name">
+                                    <a href="">Điểm danh một số thrifting shop nổi tiếng nhất tại Hà Nội</a>
+                                </h3>
+                                <a href="" class="banner__box-link">
+                                    xem chi tiết 
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__content">
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Địa chỉ liên hệ</h2>
+                        <p class="content__box-description">
+                            HUB Hà Nội: <span>Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội</span>
+                            HUB Tp HCM: <span>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</span>
+                            <!-- <a href="#">Read More</a> -->
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Truy cập nhanh</h2>
+                        <p class="content__box-description">
+                            <span><a href="#">Câu chuyện về GanZ</a></span>
+                            <span><a href="#">Lựa chọn size đồ phù hợp</a></span>   
+                            <span><a href="#">Thế mạnh của GanZ</a></span>
+                            <span><a href="#">Điều khoản sử dụng</a></span>
+                            <span><a href="#">Dịch vụ giao hàng</a></span>
+                            <span>Website: <a class="link-url" href="#">https://www.ganz.com</a> </span>
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Chính sách</h2>
+                        <p class="content__box-description">
+                            <span><a href="contact.html">Liên hệ</a></span>
+                            <span><a href="#">Hỏi đáp</a></span>   
+                            <span><a href="#">Thông tin tài khoản</a></span> 
+                            <span><a href="#">Đơn hàng của bạn</a></span>
+                            <span><a href="#">Tủ đồ định kỳ của bạn</a></span>   
+                        </p>
+                    </div>
+                    <div class="footer__content-box">
+                        <h2 class="content__box-title">Liên hệ với chúng tôi</h2>
+                        <form class="input-box">
+                            <input type="text" class="input-text" placeholder="Enter your Email">
+                             <a type="submit" class="box-icon-link">
+                                <i class="icon-link fas fa-arrow-right"></i>
+                            </a>
+                        </form>
+                        <div class="social-box">
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="icon-box fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__certification">
+                    <div class="content__certification-title">
+                        <h2 class="content__certification-text">@ CÔNG TY TNHH GANZ ASIA</h2>
+                        <p class="content__certification-des">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.</p>
+                    </div>
+                    <div class="content__certification-logo">
+                        <img src="./asset/img/logoSaleNoti.png" alt="" class="content__certification-img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button onclick="topFunction()" class="btn btn-icon--circle" id="myBtn" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- Thanh thông báo -->
+    <div class="notification-message success"></div>
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.product__new')
+        var btns = document.querySelectorAll('.btn1')
+        let currentSlide = 1;
+
+        // javascirpt for image slider manual navigation
+
+        var manuaNav = function(manual){
+            slides.forEach((product__new) =>{
+                product__new.classList.remove('active');
+            })
+            btns.forEach((btn1) =>{
+                btn1.classList.remove('active');
+            })
+
+            slides[manual].classList.add('active')
+            btns[manual].classList.add('active')
+        }
+
+        btns.forEach((btn1, i) => {
+            btn1.addEventListener("click", () => {
+                manuaNav(i)
+                currentSlide = i;
+            })
+        })
+
+        var repeat = function(activeClass){
+            let active = document.getElementsByClassName('active')
+            let i = 1;
+
+            var repeater = () =>{
+                setTimeout(function(){
+
+                    [...active].forEach((activeSlide) =>{
+                        activeSlide.classList.remove('active');
+                    })
+
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active')
+                    i++
+
+                    if(slides.length == i){
+                        i = 0;
+                    }
+                    if(i >= slides.length){
+                        return;
+                    }
+
+                    repeater();
+                }, 5000);
+            }
+            repeater();
+        }
+        repeat();
+    </script>
+    <script type="text/javascript">
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }   
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+     <script type="text/javascript" src="js/index.js"></script>
+     <script src="js/app.js"></script>
+     <script src="./js/auth/logout.js"></script>
+     <script src="./js/auth/checkLogin.js"></script>
+</body>
+</html>

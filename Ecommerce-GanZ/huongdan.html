@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/size.css">
+    <link rel="stylesheet" href="./asset/css/navbar.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/resposive.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>Hướng dẫn chọn size chuẩn - GanZ</title>
+</head>
+<body>
+
+  <div class="app">
+    <header class="header">
+      <div class="grid">
+          <div class="header__navbar">
+              <ul class="header__navbar-list hide-tab-mobile">
+                  <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng E-commerce</li>
+                  <li class="header__navbar-item">
+                      <span class="header__navbar-item-no-poiter">Kết nối</span>
+                      <a href="" class="header__navbar-icon-link">
+                          <i class="header__navbar-icon fab fa-facebook"></i>
+                      </a>
+                      <a href="" class="header__navbar-icon-link">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+              </ul>
+              <ul id="mobile-menu" class="header__navbar-list header__navbar-list-mobile">
+                  <li class="header__navbar-item header__navbar-item--has-notify">
+                      <a href="" class="header__navbar-item-link">
+                          <i class="header__navbar-icon far fa-bell"></i>
+                          Thông báo
+                      </a>
+                      <div class="header__notify">
+                          <header class="header__notify-header">
+                              <h3>Thông báo mới nhận</h3>
+
+                          </header>
+                          <ul class="header__notify-list">
+                              <li class="header__notify-item header__notify-item--viewed">
+                                  <a href="" class="header__notify-link">
+                                      <img src="./asset/img/shirt1.jpeg" alt="" class="header__notify-img">
+                                      <div class="header__notify-info">
+                                          <span class="header__notify-name">Áo khoát tay dài màu trắng tuyệt đẹp cho nam giới.</span>
+                                          <span class="header__notify-discription">Sản phẩm được làm bằng chất liệu thoáng mát</span>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="header__notify-item header__notify-item--viewed">
+                                  <a href="" class="header__notify-link">
+                                      <img src="./asset/img/underwear2.jpeg" alt="" class="header__notify-img">
+                                      <div class="header__notify-info">
+                                          <span class="header__notify-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</span>
+                                          <span class="header__notify-discription">Quần mang thoải mái không bị bí</span>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="header__notify-item header__notify-item--viewed">
+                                  <a href="" class="header__notify-link">
+                                      <img src="./asset/img/shirt3.jpeg" alt="" class="header__notify-img">
+                                      <div class="header__notify-info">
+                                          <span class="header__notify-name">Áo lông mùa đông cho nam giới</span>
+                                          <span class="header__notify-discription">Sản phẩm cực kì ấm cúm</span>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          <footer class="header__notify-footer">
+                              <a href="./notification.html" class="header__notify-footer-btn">
+                                  Xem tất cả
+                              </a>
+                          </footer>
+                      </div>
+                  </li>
+                  <li class="header__navbar-item">
+                      <a href="" class="header__navbar-item-link">
+                          <i class="header__navbar-icon far fa-question-circle"></i>
+                          Trợ giúp
+                      </a>
+                  </li>
+                  <li class="header__navbar-item">
+                      <a href="./about.html" class="header__navbar-item-link">
+                          <i class="header__navbar-icon fas fa-spa"></i>
+                          About
+                      </a>
+                  </li>
+                  <li class="header__navbar-item header__navbar-item-none-user header__navbar-item--separate">
+                      <a href="./login.html" class="header__navbar-item-link">
+                          Đăng nhập
+                      </a>
+                  </li>
+                  <li class="header__navbar-item header__navbar-item-none-user">
+                      <a href="./register.html" class="header__navbar-item-link">
+                          Đăng kí
+                      </a>
+                  </li>
+                  <li class="header__navbar-item header__navbar-user">
+                      <img src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="" class="header__navbar-user-img">
+                      <span class="header__navbar-user-name">
+                          Thanh Trung
+                      </span>
+
+                      <ul class="header__navbar-user-menu">
+                          <li class="header__navbar-user-item">
+                              <a href="">Tài khoản của tôi</a>
+                          </li>
+                          <li class="header__navbar-user-item">
+                              <a href="">Địa chỉ của tôi</a>
+                          </li>
+                          <li class="header__navbar-user-item">
+                              <a href="">Đơn mua</a>
+                          </li>
+                          <li class="header__navbar-user-item">
+                              <button id="logout" onClick="handleLogout()">Đăng xuất</button>
+                          </li>
+                      </ul>
+                  </li>
+                  <div class="icon-cancel" onclick="closeMenu()">
+                      <i class="fas fa-times"></i>
+                  </div>
+              </ul>
+          </div>
+
+          <!-- search -->
+          <div class="header-with-search">
+              <a href="./index.html"class="header__logo">
+                  <i class="header__logo-icon fas fa-cannabis"></i>
+                  <span class="header-search__logo-name">GanZ</span>
+              </a>
+              <div class="header__search-container">
+                  <div class="header__search">
+                      <div class="header__search-input-wrap">
+                          <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." class="header__search-input">
+                          <div class="header__search-history">
+                              <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                              <ul class="header__search-list">
+                                  <li class="header__search-history-item">
+                                      <a href="">Áo Khoát Nam</a>
+                                  </li>
+                                  <li class="header__search-history-item">
+                                      <a href="">Áo Sơ Mi</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <button class="header__search-btn">
+                          <i class="header__search-btn-icon fas fa-search"></i>
+                      </button>
+                  </div>
+                  <div class="header__search-item">
+                      <div class="search-item-list">
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">sale</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">
+                                      GanZ Outlet ưu đãi giảm 50%
+                                  </a>
+                              </div>
+                          </div>
+                          <a href="" class="item-list header__item">
+                              <span class="header__item-name">bộ sưu tập</span>
+                              <i class="header__item-icon fas fa-chevron-down"></i>
+                          </a>
+                          
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">áo</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">Áo sơ mi</a>
+                                  <a href="#" class="dropdown-item">Áo Polo</a>
+                                  <a href="#" class="dropdown-item">Áo thể thao</a>
+                                  <a href="#" class="dropdown-item">Áo thun</a>
+                              </div>
+                          </div>
+                          <a href="" class="item-list header__item">
+                              <span class="header__item-name">quần short</span>
+                          </a>
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">quần lót</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">quần lót Trunk</a>
+                                  <a href="#" class="dropdown-item">quần lót Brief</a>
+                                  <a href="#" class="dropdown-item">quần lót Boxer Brief</a>
+                              </div>
+                          </div>
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">phụ kiện</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">tất</a>
+                                  <a href="#" class="dropdown-item">khẩu trang</a>
+                                  <a href="#" class="dropdown-item">phụ kiện khác</a>
+                              </div>
+                          </div>
+                          <a href="./about.html" class="item-list header__item">
+                              <span class="header__item-name">ganZblog</span>
+                          </a>
+                          <a href="./huongdan.html" class="item-list header__item">
+                              <span class="header__item-name">chọn size</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="header__card">
+                  <i class="search-icon-mobile fas fa-search" onclick="inputSearch()"></i>
+                  <i class="menu-icon-mobile fas fa-bars" onclick="mobileMenu()"></i>
+                  <div class="header__cart-wrap">
+                      <i class="header__card-icon fas fa-shopping-bag"></i>
+                      <span class="header__cart-notice">0</span>
+                      <!-- No cart: header__cart-list--no-cart -->
+                      <div class="header__cart-list">
+                          <div class="header__cart-header">
+                              <img src="./asset/img/no-cart.png" alt="no-cart" class="header__cart-no-cart-img">
+                              <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm trong giỏ hàng</p>
+                          </div>
+
+                          <ul class="header__cart-list-item"></ul> 
+
+                          <div class="header__cart-footer">
+                              <p>Tổng tiền: <span>0 đ</span></p>
+                              <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+    </header>
+  
+    <div class="grid choose-size-container">
+      <ul class="breadcrumb">
+        <li><a href="./index.html">Trang chính</a></li>
+        <li>Hướng dẫn chọn size chuẩn</li>
+      </ul>
+      <h1 class="heading">HƯỚNG DẪN CHỌN SIZE CHUẨN</h1>
+      <p class="note">
+        * Thông số cơ bản của các sản phẩm coolmate: 
+        Lấy chiếc áo mà các bạn đang mặc và cảm thấy vừa nhất sau đó đo các kích thước của áo 
+        và đối chiếu với bảng thông số của chúng tôi theo các kích thước sau:
+      </p>
+      <ul class="link-to-size">
+        <li>Bạn muốn chọn size cho:</li>
+        <li><a href="#sizeAo">Size áo</a></li>
+        <li><a href="#sizeQuan">Size quần</a></li>
+        <li><a href="#sizeUnderwear">Size underwear</a></li>
+      </ul>
+      <div class="product-size-container" id="sizeAo">
+        <div class="general-type">
+          <p class="type-product">Size <span>ÁO</span></p>
+        </div>
+        <p class="type-of-shirt">
+          <span class="text-orange">1.</span> 
+          Áo sơ mi nam dài tay
+        </p>
+        <div class="guide-container">
+          <div class="table-container">
+            <table class="choose-size">
+              <tr>
+                <th class="text-orange">Thông số(cm)</th>
+                <th>
+                  <h4 class="text-orange">S</h4>
+                  <p>1m55-1m59</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">M</h4>
+                  <p>1m60-1m65</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">L</h4>
+                  <p>1m66-1m72</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">XL</h4>
+                  <p>1m73-1m77</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">2XL</h4>
+                  <p>1m78-1m85</p>
+                  <p>48kg-54kg</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài áo</td>
+                <td>73</td>
+                <td>74</td>
+                <td>75</td>
+                <td>76</td>
+                <td>77</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Ngang ngực</td>
+                <td>49</td>
+                <td>51</td>
+                <td>53</td>
+                <td>55</td>
+                <td>57</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài tay</td>
+                <td>58</td>
+                <td>59</td>
+                <td>60</td>
+                <td>61</td>
+                <td>62</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng vai</td>
+                <td>44</td>
+                <td>45</td>
+                <td>46</td>
+                <td>47</td>
+                <td>48</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container-img">
+            <img src="./asset/img/size_aosomidaitay.jpg" alt="Illustration image" class="illustration-img">
+          </div>
+        </div>
+  
+        <p class="type-of-shirt text-center my-3">
+          <span class="text-orange">2.</span> 
+          Áo sơ mi ngắn tay
+        </p>
+        <div class="guide-container">
+          <div class="table-container">
+            <table class="choose-size">
+              <tr>
+                <th class="text-orange">Thông số(cm)</th>
+                <th>
+                  <h4 class="text-orange">S</h4>
+                  <p>1m55-1m59</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">M</h4>
+                  <p>1m60-1m65</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">L</h4>
+                  <p>1m66-1m72</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">XL</h4>
+                  <p>1m73-1m77</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">2XL</h4>
+                  <p>1m78-1m85</p>
+                  <p>48kg-54kg</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài áo</td>
+                <td>73</td>
+                <td>74</td>
+                <td>75</td>
+                <td>76</td>
+                <td>77</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Ngang ngực</td>
+                <td>49</td>
+                <td>51</td>
+                <td>53</td>
+                <td>55</td>
+                <td>57</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài tay</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng vai</td>
+                <td>44</td>
+                <td>45</td>
+                <td>46</td>
+                <td>47</td>
+                <td>48</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container-img">
+            <img src="./asset/img/size_aosomingantay.jpg" alt="Illustration image" class="illustration-img">
+          </div>
+        </div>
+  
+        <p class="type-of-shirt text-center my-3">
+          <span class="text-orange">3.</span> 
+          Áo thun trơn 
+        </p>
+        <div class="guide-container">
+          <div class="table-container">
+            <table class="choose-size">
+              <tr>
+                <th class="text-orange">Thông số(cm)</th>
+                <th>
+                  <h4 class="text-orange">S</h4>
+                  <p>1m55-1m59</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">M</h4>
+                  <p>1m60-1m65</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">L</h4>
+                  <p>1m66-1m72</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">XL</h4>
+                  <p>1m73-1m77</p>
+                  <p>48kg-54kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">2XL</h4>
+                  <p>1m78-1m85</p>
+                  <p>48kg-54kg</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài áo</td>
+                <td>65</td>
+                <td>67</td>
+                <td>69</td>
+                <td>71/td>
+                <td>73</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Ngang ngực</td>
+                <td>48</td>
+                <td>50</td>
+                <td>52</td>
+                <td>54</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài tay</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng vai</td>
+                <td>38</td>
+                <td>40</td>
+                <td>42</td>
+                <td>44</td>
+                <td>46</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container-img">
+            <img src="./asset/img/size_aothun.jpg" alt="Illustration image" class="illustration-img">
+          </div>
+        </div>
+      </div>
+  
+      <div class="product-size-container" id="sizeQuan">
+        <div class="general-type my-3">
+          <p class="type-product">Size <span>QUẦN</span></p>
+        </div>
+        <p class="type-of-shirt text-center my-3">
+          <span class="text-orange">1.</span> 
+          Quần short thể thao
+        </p>
+        <div class="guide-container">
+          <div class="container-img">
+            <img src="./asset/img/size_quanshort.jpg" alt="Illustration image" class="illustration-img">
+          </div>
+          <div class="table-container">
+            <table class="choose-size">
+              <tr>
+                <th class="text-orange">Thông số(cm)</th>
+                <th>
+                  <h4 class="text-orange">M</h4>
+                  <p>1m55-1m62</p>
+                  <p>51kg-59kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">L</h4>
+                  <p>1m63-1m69</p>
+                  <p>60kg-68kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">XL</h4>
+                  <p>1m70-1m76</p>
+                  <p>69kg-77kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">2XL</h4>
+                  <p>1m77-1m85</p>
+                  <p>78kg-85kg</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng CAP 1/2</td>
+                <td>35</td>
+                <td>37</td>
+                <td>39</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng mông</td>
+                <td>47</td>
+                <td>49</td>
+                <td>51</td>
+                <td>53</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng ngang ống 1/2</td>
+                <td>26.5</td>
+                <td>27</td>
+                <td>27.5</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài quần</td>
+                <td>45</td>
+                <td>47</td>
+                <td>49</td>
+                <td>51</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+  
+        <p class="type-of-shirt text-center my-3">
+          <span class="text-orange">2.</span> 
+          Quần short kaki
+        </p>
+        <div class="guide-container">
+          <div class="container-img">
+            <img src="./asset/img/size_quankaki.jpg" alt="Illustration image" class="illustration-img">
+          </div>
+          <div class="table-container">
+            <table class="choose-size">
+              <tr>
+                <th class="text-orange">Thông số(cm)</th>
+                <th>
+                  <h4 class="text-orange">M</h4>
+                  <p>1m55-1m62</p>
+                  <p>51kg-59kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">L</h4>
+                  <p>1m63-1m69</p>
+                  <p>60kg-68kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">XL</h4>
+                  <p>1m70-1m76</p>
+                  <p>69kg-77kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">2XL</h4>
+                  <p>1m77-1m85</p>
+                  <p>78kg-85kg</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng CAP 1/2</td>
+                <td>40</td>
+                <td>42</td>
+                <td>44</td>
+                <td>46</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng mông</td>
+                <td>49</td>
+                <td>51</td>
+                <td>53</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Rộng ngang ống 1/2</td>
+                <td>24</td>
+                <td>24.5</td>
+                <td>25</td>
+                <td>25.5</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài quần</td>
+                <td>48</td>
+                <td>50</td>
+                <td>52</td>
+                <td>54</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+      <div class="product-size-container" id="sizeUnderwear">
+        <div class="general-type my-3">
+          <p class="type-product">Size <span>UNDERWEAR</span></p>
+        </div>
+        <p class="type-of-shirt text-center my-3">
+          <span class="text-orange">1.</span> 
+          Quần Boxer
+        </p>
+        <div class="guide-container">
+          <div class="table-container">
+            <table class="choose-size">
+              <tr>
+                <th class="text-orange">Thông số(cm)</th>
+                <th>
+                  <h4 class="text-orange">M</h4>
+                  <p>1m55-1m62</p>
+                  <p>51kg-59kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">L</h4>
+                  <p>1m63-1m69</p>
+                  <p>60kg-68kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">XL</h4>
+                  <p>1m70-1m76</p>
+                  <p>69kg-77kg</p>
+                </th>
+                <th>
+                  <h4 class="text-orange">2XL</h4>
+                  <p>1m77-1m85</p>
+                  <p>78kg-85kg</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="text--dark"> Lưng quần đo êm 1/2</td>
+                <td>31</td>
+                <td>33</td>
+                <td>35</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Ống quần đo êm 1/2</td>
+                <td>18.5</td>
+                <td>19.5</td>
+                <td>20.5</td>
+                <td>21.5</td>
+              </tr>
+              <tr>
+                <td class="text--dark">Dài quần + cạp</td>
+                <td>26</td>
+                <td>27.5</td>
+                <td>29.5</td>
+                <td>30.5</td>
+              </tr>
+            </table>
+          </div>
+          <div class="container-img">
+            <img src="./asset/img/size_quanboxer.jpg" alt="Illustration image" class="illustration-img">
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="note-container">
+        <h4 class="note__heading text-orange">
+          <i class="fas fa-certificate"></i>
+          Trường hợp số đo của bạn nằm trong khoảng giữa các size với nhau:
+        </h4>
+        <p class="note__content">
+          Với quần short, bạn hãy lựa chọn ưu <strong>tiên theo cân nặng</strong>.
+        </p>
+        <p class="note__content">
+          Ví dụ chiều cao của bạn theo size M nhưng cân nặng theo size L, hãy chọn L.
+        </p>
+        <p class="note__content">
+          <strong>97%</strong> khách hàng của chúng tôi đã <strong>chọn đúng size</strong> theo cách này.
+        </p>
+        <p class="note__content">
+          * Lưu ý: Các hướng dẫn về chọn Size chỉ mang tính tương đối chính xác, nếu bạn chưa chắc chắn xin vui lòng liên hệ trực tiếp với chúng tôi để được tư vấn.
+        </p>
+      </div>
+    </div>
+  
+    <footer class="footer">
+      <div class="grid">
+          <div class="footer__content">
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Địa chỉ liên hệ</h2>
+                  <p class="content__box-description">
+                      HUB Hà Nội: <span>Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội</span>
+                      HUB Tp HCM: <span>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</span>
+                      <!-- <a href="#">Read More</a> -->
+                  </p>
+              </div>
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Truy cập nhanh</h2>
+                  <p class="content__box-description">
+                      <span><a href="#">Câu chuyện về GanZ</a></span>
+                      <span><a href="#">Lựa chọn size đồ phù hợp</a></span>   
+                      <span><a href="#">Thế mạnh của GanZ</a></span>
+                      <span><a href="#">Điều khoản sử dụng</a></span>
+                      <span><a href="#">Dịch vụ giao hàng</a></span>
+                      <span>Website: <a class="link-url" href="#">https://www.ganz.com</a> </span>
+                  </p>
+              </div>
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Chính sách</h2>
+                  <p class="content__box-description">
+                      <span><a href="#">Liên hệ</a></span>
+                      <span><a href="#">Hỏi đáp</a></span>   
+                      <span><a href="#">Thông tin tài khoản</a></span> 
+                      <span><a href="#">Đơn hàng của bạn</a></span>
+                      <span><a href="#">Tủ đồ định kỳ của bạn</a></span>   
+                  </p>
+              </div>
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Liên hệ với chúng tôi</h2>
+                  <form class="input-box">
+                      <input type="text" class="input-text" placeholder="Enter your Email">
+                       <a type="submit" class="box-icon-link">
+                          <i class="icon-link fas fa-arrow-right"></i>
+                      </a>
+                  </form>
+                  <div class="social-box">
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-google"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-pinterest-p"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="content__certification py-4">
+              <div class="content__certification-title">
+                  <h2 class="content__certification-text">@ CÔNG TY TNHH GANZ ASIA</h2>
+                  <p class="content__certification-des">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.</p>
+              </div>
+              <div class="content__certification-logo">
+                  <img src="./asset/img/logoSaleNoti.png" alt="" class="content__certification-img">
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/auth/logout.js"></script>
+     <script src="./js/auth/checkLogin.js"></script>
+  </div>
+</body>
+</html>

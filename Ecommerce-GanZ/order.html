@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/order.css">
+    <link rel="stylesheet" href="./asset/css/navbar.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/resposive.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="icon" href="/asset/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>Thanh toán đơn hàng - GanZ</title>
+</head>
+<body>
+
+  <div class="app">
+    <header class="header">
+      <div class="grid">
+          <div class="header__navbar">
+              <ul class="header__navbar-list hide-tab-mobile">
+                  <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng E-commerce</li>
+                  <li class="header__navbar-item">
+                      <span class="header__navbar-item-no-poiter">Kết nối</span>
+                      <a href="" class="header__navbar-icon-link">
+                          <i class="header__navbar-icon fab fa-facebook"></i>
+                      </a>
+                      <a href="" class="header__navbar-icon-link">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+              </ul>
+              <ul id="mobile-menu" class="header__navbar-list header__navbar-list-mobile">
+                  <li class="header__navbar-item header__navbar-item--has-notify">
+                      <a href="" class="header__navbar-item-link">
+                          <i class="header__navbar-icon far fa-bell"></i>
+                          Thông báo
+                      </a>
+                      <div class="header__notify">
+                          <header class="header__notify-header">
+                              <h3>Thông báo mới nhận</h3>
+
+                          </header>
+                          <ul class="header__notify-list">
+                              <li class="header__notify-item header__notify-item--viewed">
+                                  <a href="" class="header__notify-link">
+                                      <img src="./asset/img/shirt1.jpeg" alt="" class="header__notify-img">
+                                      <div class="header__notify-info">
+                                          <span class="header__notify-name">Áo khoát tay dài màu trắng tuyệt đẹp cho nam giới.</span>
+                                          <span class="header__notify-discription">Sản phẩm được làm bằng chất liệu thoáng mát</span>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="header__notify-item header__notify-item--viewed">
+                                  <a href="" class="header__notify-link">
+                                      <img src="./asset/img/underwear2.jpeg" alt="" class="header__notify-img">
+                                      <div class="header__notify-info">
+                                          <span class="header__notify-name">Quần lót nam đẹp, sành điệu, thoáng mát dành riêng cho nam giới.</span>
+                                          <span class="header__notify-discription">Quần mang thoải mái không bị bí</span>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="header__notify-item header__notify-item--viewed">
+                                  <a href="" class="header__notify-link">
+                                      <img src="./asset/img/shirt3.jpeg" alt="" class="header__notify-img">
+                                      <div class="header__notify-info">
+                                          <span class="header__notify-name">Áo lông mùa đông cho nam giới</span>
+                                          <span class="header__notify-discription">Sản phẩm cực kì ấm cúm</span>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          <footer class="header__notify-footer">
+                              <a href="./notification.html" class="header__notify-footer-btn">
+                                  Xem tất cả
+                              </a>
+                          </footer>
+                      </div>
+                  </li>
+                  <li class="header__navbar-item">
+                      <a href="" class="header__navbar-item-link">
+                          <i class="header__navbar-icon far fa-question-circle"></i>
+                          Trợ giúp
+                      </a>
+                  </li>
+                  <li class="header__navbar-item">
+                      <a href="./about.html" class="header__navbar-item-link">
+                          <i class="header__navbar-icon fas fa-spa"></i>
+                          About
+                      </a>
+                  </li>
+                  <li class="header__navbar-item header__navbar-item-none-user header__navbar-item--separate">
+                      <a href="./login.html" class="header__navbar-item-link">
+                          Đăng nhập
+                      </a>
+                  </li>
+                  <li class="header__navbar-item header__navbar-item-none-user">
+                      <a href="./register.html" class="header__navbar-item-link">
+                          Đăng kí
+                      </a>
+                  </li>
+                  <li class="header__navbar-item header__navbar-user">
+                      <img src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="" class="header__navbar-user-img">
+                      <span class="header__navbar-user-name">
+                          Thanh Trung
+                      </span>
+
+                      <ul class="header__navbar-user-menu">
+                          <li class="header__navbar-user-item">
+                              <a href="">Tài khoản của tôi</a>
+                          </li>
+                          <li class="header__navbar-user-item">
+                              <a href="">Địa chỉ của tôi</a>
+                          </li>
+                          <li class="header__navbar-user-item">
+                              <a href="">Đơn mua</a>
+                          </li>
+                          <li class="header__navbar-user-item">
+                              <button id="logout" onClick="handleLogout()">Đăng xuất</button>
+                          </li>
+                      </ul>
+                  </li>
+                  <div class="icon-cancel" onclick="closeMenu()">
+                      <i class="fas fa-times"></i>
+                  </div>
+              </ul>
+          </div>
+
+          <!-- search -->
+          <div class="header-with-search">
+              <a href="./index.html"class="header__logo">
+                  <i class="header__logo-icon fas fa-cannabis"></i>
+                  <span class="header-search__logo-name">GanZ</span>
+              </a>
+              <div class="header__search-container">
+                  <div class="header__search">
+                      <div class="header__search-input-wrap">
+                          <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." class="header__search-input">
+                          <div class="header__search-history">
+                              <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                              <ul class="header__search-list">
+                                  <li class="header__search-history-item">
+                                      <a href="">Áo Khoát Nam</a>
+                                  </li>
+                                  <li class="header__search-history-item">
+                                      <a href="">Áo Sơ Mi</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <button class="header__search-btn">
+                          <i class="header__search-btn-icon fas fa-search"></i>
+                      </button>
+                  </div>
+                  <div class="header__search-item">
+                      <div class="search-item-list">
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">sale</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">
+                                      GanZ Outlet ưu đãi giảm 50%
+                                  </a>
+                              </div>
+                          </div>
+                          <a href="" class="item-list header__item">
+                              <span class="header__item-name">bộ sưu tập</span>
+                              <i class="header__item-icon fas fa-chevron-down"></i>
+                          </a>
+                          
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">áo</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">Áo sơ mi</a>
+                                  <a href="#" class="dropdown-item">Áo Polo</a>
+                                  <a href="#" class="dropdown-item">Áo thể thao</a>
+                                  <a href="#" class="dropdown-item">Áo thun</a>
+                              </div>
+                          </div>
+                          <a href="" class="item-list header__item">
+                              <span class="header__item-name">quần short</span>
+                          </a>
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">quần lót</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">quần lót Trunk</a>
+                                  <a href="#" class="dropdown-item">quần lót Brief</a>
+                                  <a href="#" class="dropdown-item">quần lót Boxer Brief</a>
+                              </div>
+                          </div>
+                          <div class="item-list dropdown">
+                              <a href="" class="header__item">
+                                  <span class="header__item-name">phụ kiện</span>
+                                  <i class="header__item-icon fas fa-chevron-down"></i>
+                              </a>
+                              <div class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">tất</a>
+                                  <a href="#" class="dropdown-item">khẩu trang</a>
+                                  <a href="#" class="dropdown-item">phụ kiện khác</a>
+                              </div>
+                          </div>
+                          <a href="./about.html" class="item-list header__item">
+                              <span class="header__item-name">ganZblog</span>
+                          </a>
+                          <a href="./huongdan.html" class="item-list header__item">
+                              <span class="header__item-name">chọn size</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="header__card">
+                  <i class="search-icon-mobile fas fa-search" onclick="inputSearch()"></i>
+                  <i class="menu-icon-mobile fas fa-bars" onclick="mobileMenu()"></i>
+                  <div class="header__cart-wrap">
+                      <i class="header__card-icon fas fa-shopping-bag"></i>
+                      <span class="header__cart-notice">0</span>
+                      <!-- No cart: header__cart-list--no-cart -->
+                      <div class="header__cart-list">
+                          <div class="header__cart-header">
+                              <img src="./asset/img/no-cart.png" alt="no-cart" class="header__cart-no-cart-img">
+                              <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm trong giỏ hàng</p>
+                          </div>
+
+                          <ul class="header__cart-list-item"></ul> 
+
+                          <div class="header__cart-footer">
+                              <p>Tổng tiền: <span>0 đ</span></p>
+                              <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+    </header>
+  
+    <div class="grid order-container">
+      <ul class="breadcrumb">
+        <li><a href="./index.html">Trang chính</a></li>
+        <li><a href="./cart.html">Giỏ hàng cá nhân</a></li>
+        <li>Thanh toán</li>
+      </ul>
+
+      <form action="" id="form-payment">
+        <div class="address-container">
+          <div class="address__header">
+            <h1 class="address__heading">Địa chỉ giao hàng</h1>
+          </div>
+          <div class="address__content">
+            <div class="">
+              <input id="userId" type="text" class="payment__form-input" placeholder="" value="" hidden>
+              <div class="form-group--horizontal">
+                <label for=""><span>*</span> Họ và tên</label>
+                <div class="form-input">
+                  <input id="addName" type="text" class="payment__form-input" placeholder="Nhập tên người nhận hàng" value="">
+                  <p class="valid__feedback-name"></p>
+                </div>
+              </div>
+              <div class="form-group--horizontal">
+                <label for=""><span>*</span> Địa chỉ</label>
+                <div class="form-input">
+                  <input id="addAddress" type="text" class="payment__form-input" placeholder="Nhập địa chỉ giao hàng" value="">
+                  <p class="valid__feedback-address"></p>
+                </div>
+              </div>
+              <div class="form-group--horizontal">
+                <label for=""><span>*</span> Số điện thoại</label>
+                <div class="form-input">
+                  <input id="addPhone" type="text" class="payment__form-input" placeholder="Nhập số điện thoại người nhận hàng" value="">
+                  <p class="valid__feedback-phone"></p>
+                </div>
+              </div>
+              <div class="form-group--horizontal">
+                <label for="">Email</label>
+                <div class="form-input">
+                  <input id="addEmail" type="email" class="payment__form-input" placeholder="Nhập email người nhận hàng" value="">
+                  <p class="valid__feedback-email"></p>
+                </div>
+              </div>
+            </div>
+            <div class="address__choose">
+              <div class="address">
+                <!-- <span><i class="fas fa-map-marker-alt"></i></span>
+                <p class="address__text">Name, phone(+0000000000), address
+                  Name, phone(+0000000000), address
+                  Name, phone(+0000000000), address
+                </p>
+                <div class="address-default">Mặc định</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container__body">
+          <div class="container__header">
+            <ul class="container__header-item header-product">
+              <li>Sản phẩm</li>
+            </ul>
+            <ul class="container__header-item element-product">
+              <li>Đơn giá</li>
+              <li>Số lượng</li>
+              <li>Thành tiền</li>
+            </ul>
+          </div>
+    
+          <div class="container__content">
+            <div class="container__item">
+              <div class="content__item container__product">
+                <!-- <img src="./asset/img/pngtree-blue-short-sleeve-shirt.jpg" alt="Product" class="product__img"> -->
+                <p class="product-name">Chưa có sản phẩm nào !!!</p>
+              </div>
+              <ul class="content__item containar__product-element">
+                <li>0 đ</li>
+                <li>0</li>
+                <li>0 đ</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="container__note">
+            <div class="container__message">
+              <p class="message__heading">Lời nhắn:</p>
+              <textarea name="" id="" cols="10" rows="5" class="input-message" value=""></textarea>
+              <!-- <input type="text" class="input input-message" value=""> -->
+            </div>
+            <div class="container__delivery">
+              <p class="delivery__heading">Phí vận chuyển:</p>
+              <span class="delivery__fee">20.000 đ</span>
+            </div>
+            <!-- <div class="container__delivery">
+              <p class="delivery__heading">Giao hàng:</p>
+              <div class="delivery__display">
+                <h4 class="delevery__heading">Tên hãng vận chuyển</h4>
+                <p class="text-danger">Vui lòng chọn thời gian giao hàng</p>
+              </div>
+              <button class="btn btn--outline" disabled>THAY ĐỔI</button>
+              <span class="delivery__fee">20.000 đ</span>
+            </div> -->
+          </div>
+    
+          <div class="container__footer">
+            <span class="container__heading">
+              Tổng tiền (<span class="text-orange"></span> sản phẩm):
+            </span>
+            <h1 class="total__money total__money-product">0 đ</h1>
+          </div>
+        </div>
+    
+        <div class="container__voucher">
+          <h4 class="voucher__heading">Voucher</h4>
+          <button class="btn voucher__link">
+            <span>Chọn code </span>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+  
+        <!-- Modal for Voucher -->
+        <div id="modalVoucher" class="modal-voucher">
+          <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-display">
+                <div class="modal-header">
+                  <h2 class="modal-title text-orange">Voucher mua hàng</h2>
+                  <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="body--flex-column">
+                    <img src="./asset/img/apology.png" class="voucher-image" alt="Voucher image">
+                    <p>Chúng tôi rất tiếc là hiện tại chưa có voucher nào. Mong quý khách thông cảm 
+                      <span> <i class="fas fa-exclamation"></i></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End Modal for Voucher -->
+    
+        <div class="container__payment">
+          <div class="payment__header">
+            <h4 class="payment__heading">Phương thức thanh toán</h4>
+            <div class="container__method">
+              <!-- <button class="btn btn--outline" disabled>Credit card</button> -->
+              <a class="btn btn--outline checked">Trả tiền khi nhận hàng</a>
+            </div>
+          </div>
+          <div class="payment__body">
+            <p class="money-product">Tổng tiền của sản phẩm: <span>0 đ</span></p>
+            <p class="money-delivery">Phí giao hàng: <span>0 đ</span></p>
+            <p class="money-total">Tổng tiền của đơn hàng: <span class="total__money total__money-order">0 đ</span></p>
+          </div>
+          <div class="payment__footer">
+            <p class="payment__footer-note">
+              Nhấn "Thanh toán" đồng nghĩa việc đồng ý tất cả thông tin. 
+              <a href="#" class="footer-note-link">GanZ Terms</a>
+            </p>
+            <button type="submit" class="btn btn--primary btn-pay">Thanh toán</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+    <footer class="footer">
+      <div class="grid">
+          <div class="footer__content">
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Địa chỉ liên hệ</h2>
+                  <p class="content__box-description">
+                      HUB Hà Nội: <span>Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội</span>
+                      HUB Tp HCM: <span>Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</span>
+                      <!-- <a href="#">Read More</a> -->
+                  </p>
+              </div>
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Truy cập nhanh</h2>
+                  <p class="content__box-description">
+                      <span><a href="#">Câu chuyện về GanZ</a></span>
+                      <span><a href="#">Lựa chọn size đồ phù hợp</a></span>   
+                      <span><a href="#">Thế mạnh của GanZ</a></span>
+                      <span><a href="#">Điều khoản sử dụng</a></span>
+                      <span><a href="#">Dịch vụ giao hàng</a></span>
+                      <span>Website: <a class="link-url" href="#">https://www.ganz.com</a> </span>
+                  </p>
+              </div>
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Chính sách</h2>
+                  <p class="content__box-description">
+                      <span><a href="#">Liên hệ</a></span>
+                      <span><a href="#">Hỏi đáp</a></span>   
+                      <span><a href="#">Thông tin tài khoản</a></span> 
+                      <span><a href="#">Đơn hàng của bạn</a></span>
+                      <span><a href="#">Tủ đồ định kỳ của bạn</a></span>   
+                  </p>
+              </div>
+              <div class="footer__content-box">
+                  <h2 class="content__box-title">Liên hệ với chúng tôi</h2>
+                  <form class="input-box">
+                      <input type="text" class="input-text" placeholder="Enter your Email">
+                       <a type="submit" class="box-icon-link">
+                          <i class="icon-link fas fa-arrow-right"></i>
+                      </a>
+                  </form>
+                  <div class="social-box">
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-google"></i>
+                      </a>
+                      <a href="#" class="social-link">
+                          <i class="icon-box fab fa-pinterest-p"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="content__certification py-4">
+              <div class="content__certification-title">
+                  <h2 class="content__certification-text">@ CÔNG TY TNHH GANZ ASIA</h2>
+                  <p class="content__certification-des">Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.</p>
+              </div>
+              <div class="content__certification-logo">
+                  <img src="./asset/img/logoSaleNoti.png" alt="" class="content__certification-img">
+              </div>
+          </div>
+      </div>
+    </footer>
+  </div>
+  <button onclick="topFunction()" class="btn btn-icon--circle" id="myBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <!-- Thanh thông báo -->
+  <div class="notification-message success"></div>
+  
+  <script type="text/javascript">
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }   
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="./js/app.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/order.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/auth/logout.js"></script>
+  <script src="./js/auth/checkLogin.js"></script>
+</body>
+</html>
